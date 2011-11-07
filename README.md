@@ -2,7 +2,7 @@
 
 A user style for new google reader UI, released in Nov. 2011.
 
-[![image](images/screenshot-small.png)](images/screenshot.png)
+[![image](https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/screenshot-small.png)](https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/screenshot.png)
 
 ### Why?
 I spend a considerable amount of time everyday using Google Reader.
