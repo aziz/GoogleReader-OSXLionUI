@@ -1,4 +1,4 @@
-# Google Reader -- Mac OS Lion UI #
+# Google Reader &mdash; Mac OS Lion UI #
 
 A user style for new google reader UI, released in Nov. 2011.
 
@@ -15,4 +15,4 @@ Feel free to fork this repo and add your changes. make sure to make a pull reque
   
   
 ------
-Copyright &copy; 2011 Allen Bargi.
+Copyright &copy; 2011 Allen Bargi

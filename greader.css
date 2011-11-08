@@ -3,20 +3,6 @@
   github: http://github.com/aziz/Google-Reader-Lion-UI
 */
 
-/* 
-TODO:
-- popup menus
-
-BETTER ICONS:
-- refresh icon
-- star and trends icons selected state icons
-- rec feed-doc and feed selected state icons
-
-BUGS:
-- "All items" and "explore" arrows do not get the selected state
-- search result page -> toolbar header
-*/
-
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,300,400,600,700,800);
 
 /* @group Layout Fixes */
@@ -44,7 +30,7 @@ body { padding:0 !important; margin:0 !important;}
 
 /* @group Topbar */
 #gbx3, #gbx4 {
-  background-color: #d2d2d2;
+  background-color: #d2d2d2 !important;
   border-bottom: 1px solid #989898 !important;
   background-image: -moz-linear-gradient(top, #e8e8e8, #c2c2c2) !important;
   background-image: -webkit-gradient(linear, left top, right top, from(#e8e8e8), to(#c2c2c2)) !important;
@@ -71,8 +57,8 @@ body { padding:0 !important; margin:0 !important;}
   position: absolute !important;
   right: 4px !important;
   top: -26px !important;
-  z-index: 99999;
-  min-width: 100px;
+  z-index: 99999 !important;
+  min-width: 100px !important;
 }
 
 #search-input {
@@ -112,7 +98,7 @@ body { padding:0 !important; margin:0 !important;}
 }
 
 #search .search-restrict {
-  width: 130px;
+  width: 130px !important;
   margin: 0 !important;
   -webkit-border-radius: 0 !important;
   -moz-border-radius   : 0 !important;
@@ -169,15 +155,19 @@ body { padding:0 !important; margin:0 !important;}
   -o-box-shadow     : none !important;
   box-shadow        : none !important;
 }
+.goog-button-base-inner-box {
+  border-left: 0px solid transparent !important;
+  border-right: 0px solid transparent !important;
+}
 /* @end */
 
 /* @group SIDEBAR */
 #nav {
   background-color: #e6eaef !important;
-  -webkit-box-shadow: inset -1px 0 0 #b4b4b4,inset -2px 0 0 #e5e9ed, inset 0 1px 0 rgba(255,255,255,.5);
-  -moz-box-shadow   : inset -1px 0 0 #b4b4b4,inset -2px 0 0 #e5e9ed, inset 0 1px 0 rgba(255,255,255,.5);
-  -o-box-shadow     : inset -1px 0 0 #b4b4b4,inset -2px 0 0 #e5e9ed, inset 0 1px 0 rgba(255,255,255,.5);
-  box-shadow        : inset -1px 0 0 #b4b4b4,inset -2px 0 0 #e5e9ed, inset 0 1px 0 rgba(255,255,255,.5);
+  -webkit-box-shadow: inset -1px 0 0 #b4b4b4,inset -2px 0 0 #e5e9ed, inset 0 1px 0 rgba(255,255,255,.5) !important;
+  -moz-box-shadow   : inset -1px 0 0 #b4b4b4,inset -2px 0 0 #e5e9ed, inset 0 1px 0 rgba(255,255,255,.5) !important;
+  -o-box-shadow     : inset -1px 0 0 #b4b4b4,inset -2px 0 0 #e5e9ed, inset 0 1px 0 rgba(255,255,255,.5) !important;
+  box-shadow        : inset -1px 0 0 #b4b4b4,inset -2px 0 0 #e5e9ed, inset 0 1px 0 rgba(255,255,255,.5) !important;
 }
 .lhn-section, .scroll-tree li { background: transparent !important; }
 .lhn-section-secondary li a {border-left: 3px solid transparent !important;}
@@ -197,10 +187,10 @@ body { padding:0 !important; margin:0 !important;}
   margin-left: 0 !important;
   margin-right: 1px !important;
   border-bottom: 1px solid rgba(111, 126, 139,.25) !important;
-  -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.6);
-  -moz-box-shadow   : 0 1px 0 rgba(255,255,255,.6);
-  -o-box-shadow     : 0 1px 0 rgba(255,255,255,.6);
-  box-shadow        : 0 1px 0 rgba(255,255,255,.6);
+  -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.6) !important;
+  -moz-box-shadow   : 0 1px 0 rgba(255,255,255,.6) !important;
+  -o-box-shadow     : 0 1px 0 rgba(255,255,255,.6) !important;
+  box-shadow        : 0 1px 0 rgba(255,255,255,.6) !important;
   padding-bottom: 8px !important;
   margin-bottom: 2px !important;
 }
@@ -304,10 +294,12 @@ body { padding:0 !important; margin:0 !important;}
   background: url('https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/feed.png') 2px 2px no-repeat !important;
 }
 #recommendations-tree-view-all {padding-left: 40px !important;}
+#scrollable-sections-bottom-shadow { border-bottom: 0px solid transparent !important; }
+#scrollable-sections-top-shadow { border-top: 0px solid transparent !important; }
 /* @end */
 
 /* @group Add Subscription button */
-#main {overflow-x: visible !important;}
+#main { overflow-x: visible !important; }
 #lhn-add-subscription-section {
   position: static !important;
   height: 0 !important;
@@ -323,29 +315,29 @@ body { padding:0 !important; margin:0 !important;}
   left:170px !important;
   z-index: 999999999 !important;
   padding:0 3px !important;
-  width: 70px;
+  width: 70px !important;
 }
 
 #lhn-add-subscription-section .jfk-button-primary {
   background-color: transparent !important;
   background-image: none !important;
-  border: 0px solid transparent !important;
+  border: 0 solid transparent !important;
   color: #fff !important;
   text-shadow: 0 1px rgba(0,0,0,.33) !important;
 }
 
 #lhn-add-subscription-section .jfk-button-primary:before {
-  content: "";
-  background: url('//ssl.gstatic.com/gb/images/h_bedf916a.png');
-  background-position: -27px -22px;
-  border: 0;
-  font-size: 0;
-  padding: 29px 0 0;
-  width: 1px;
-  height: 22px;
-  display: inline-block;
-  position: absolute;
-  left:0;
+  content: "" !important;
+  background: url('//ssl.gstatic.com/gb/images/h_bedf916a.png') !important;
+  background-position: -27px -22px !important;
+  border: 0 !important;
+  font-size: 0 !important;
+  padding: 29px 0 0 !important;
+  width: 1px !important;
+  height: 22px !important;
+  display: inline-block !important;
+  position: absolute !important;
+  left:0 !important;
 }
 #lhn-add-subscription-section .jfk-button-primary.jfk-button-hover  {
   -webkit-box-shadow: none !important;
@@ -372,7 +364,7 @@ body { padding:0 !important; margin:0 !important;}
 }
 
 #viewer-top-controls { padding: 3px 0 0 8px !important; }
-.jfk-button {margin-right: 8px !important;}
+.jfk-button { margin-right: 8px !important; }
 #viewer-refresh, #stream-prefs-menu, #viewer-view-options, .jfk-button-narrow,
 #mark-all-as-read-split-button .jfk-button, #mark-all-as-read-split-button .goog-flat-menu-button {
   background-color: #dedede !important;
@@ -430,7 +422,7 @@ body { padding:0 !important; margin:0 !important;}
   border-radius        : 4px 0 0 4px !important;
   margin-right:0 !important;
 }
-#mark-all-as-read-split-button .goog-flat-menu-button-collapse-left { min-width: 8px !important;}
+#mark-all-as-read-split-button .goog-flat-menu-button-collapse-left { min-width: 8px !important; }
 .goog-button-base-outer-box {
   border-top: 0 solid transparent !important;
   border-bottom: 0 solid transparent !important;
@@ -440,10 +432,10 @@ body { padding:0 !important; margin:0 !important;}
   background-color: transparent !important;
   background-image: none !important;
   background: transparent !important;
-  border-left: 0 solid transparent;
-  border-right: 0 solid transparent;
-  margin: 0 -1px;
-  height: 20px;
+  border-left: 0 solid transparent !important;
+  border-right: 0 solid transparent !important;
+  margin: 0 -1px !important;
+  height: 20px !important;
 }
 
 .goog-button-base-content {
@@ -469,7 +461,7 @@ body { padding:0 !important; margin:0 !important;}
 #stream-prefs-menu { padding-right: 12px !important;}
 #stream-view-options-container .jfk-button-standard, #item-up-down-buttons .jfk-button-standard {padding:0 2px !important;}
 #item-up-down-buttons { margin-right:8px !important; }
-.jfk-button-standard .jfk-button-img { opacity: .66;}
+.jfk-button-standard .jfk-button-img { opacity: .66 !important;}
 #viewer-translated-by {
   margin-left: 0 !important;
   margin-top: 0 !important;
@@ -481,16 +473,17 @@ body { padding:0 !important; margin:0 !important;}
 
 /* @group Viewer */
 #viewer-container {
-  background: #e1e2e3 url('https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/bg.png') repeat;
+  background: url('https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/bg.png') repeat !important;
+  background-color: #e1e2e3 !important;
 }
 
 #title-and-status-holder {
-  background: rgb(252,252,252);
-  background: -moz-linear-gradient(top,  rgba(252,252,252,1) 0%, rgba(245,245,245,1) 46%, rgba(236,236,236,1) 54%, rgba(249,249,249,1) 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,252,252,1)), color-stop(46%,rgba(245,245,245,1)), color-stop(54%,rgba(236,236,236,1)), color-stop(100%,rgba(249,249,249,1)));
-  background: -webkit-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(245,245,245,1) 46%,rgba(236,236,236,1) 54%,rgba(249,249,249,1) 100%);
-  background: -o-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(245,245,245,1) 46%,rgba(236,236,236,1) 54%,rgba(249,249,249,1) 100%);
-  background: linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(245,245,245,1) 46%,rgba(236,236,236,1) 54%,rgba(249,249,249,1) 100%);
+  background: rgb(252,252,252) !important;
+  background: -moz-linear-gradient(top,  rgba(252,252,252,1) 0%, rgba(245,245,245,1) 46%, rgba(236,236,236,1) 54%, rgba(249,249,249,1) 100%) !important;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,252,252,1)), color-stop(46%,rgba(245,245,245,1)), color-stop(54%,rgba(236,236,236,1)), color-stop(100%,rgba(249,249,249,1))) !important;
+  background: -webkit-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(245,245,245,1) 46%,rgba(236,236,236,1) 54%,rgba(249,249,249,1) 100%) !important;
+  background: -o-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(245,245,245,1) 46%,rgba(236,236,236,1) 54%,rgba(249,249,249,1) 100%) !important;
+  background: linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(245,245,245,1) 46%,rgba(236,236,236,1) 54%,rgba(249,249,249,1) 100%) !important;
   padding:0 8px !important;
   margin: 0 !important;
   border-bottom: 1px solid #b6b6b6 !important;
@@ -504,18 +497,18 @@ body { padding:0 !important; margin:0 !important;}
 #entries .entry, #entries.list .entry-container { background: transparent !important; }
 .cards .entry {  margin: 0 8px !important;  }
 .entry .card {
-  -webkit-border-radius: 4px;
-  -moz-border-radius   : 4px;
-  border-radius        : 4px;
-  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.33);
-  -moz-box-shadow   : 0 1px 3px rgba(0,0,0,.33);
-  -o-box-shadow     : 0 1px 3px rgba(0,0,0,.33);
-  box-shadow        : 0 1px 3px rgba(0,0,0,.33);
+  -webkit-border-radius: 4px !important;
+  -moz-border-radius   : 4px !important;
+  border-radius        : 4px !important;
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.33) !important;
+  -moz-box-shadow   : 0 1px 3px rgba(0,0,0,.33) !important;
+  -o-box-shadow     : 0 1px 3px rgba(0,0,0,.33) !important;
+  box-shadow        : 0 1px 3px rgba(0,0,0,.33) !important;
   border-width: 2px !important;
   border-style: solid !important;
   padding: 0 1em !important;
 }
-#current-entry .card { border-color: #4e73d5 !important } /* OR: rgba(0,0,0,.5)*/
+#current-entry .card { border-color: #4e73d5 !important }
 .card .card-content { padding: 8px 0 5px !important; }
 .entry .entry-author, .entry-comments .comment-time, .entry .entry-date { color: #aaa !important; }
 .entry-container .entry-title a, .entry-container .entry-body a, .entry-container .entry-title a,
@@ -555,9 +548,7 @@ body { padding:0 !important; margin:0 !important;}
 /* @end */
 
 /* @group Scrollbar */
-::-webkit-scrollbar {
-  width: 8px !important;
-}
+::-webkit-scrollbar { width: 8px !important; }
 
 ::-webkit-scrollbar-thumb {
   border-width: 0 !important;
