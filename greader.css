@@ -64,6 +64,7 @@ body { padding:0 !important; margin:0 !important;}
 #search-input {
   width: 300px !important;
   border-radius: 50px !important;
+  -moz-appearance: none !important;
 }
 
 .jfk-textinput:focus {
@@ -119,11 +120,12 @@ body { padding:0 !important; margin:0 !important;}
 
 #search .jfk-button-action {
   background-color: transparent !important;
-  background-image: url('https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/search.png');
+  background-image: url('https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/search.png') !important;
   border: 0 solid transparent !important;
   color: transparent !important;
   width: 13px !important;
   height: 13px !important;
+  -moz-appearance: none !important;
 }
 
 #search .jfk-button-action img {display: none !important;}
