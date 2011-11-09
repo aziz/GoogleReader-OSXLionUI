@@ -3,7 +3,50 @@
   github: http://github.com/aziz/Google-Reader-Lion-UI
 */
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,300,400,600,700,800);
+/* @group Fonts */
+@font-face {
+  font-family: 'Open Sans' !important;
+  font-style: normal !important;
+  font-weight: 300 !important;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url('https://themes.googleusercontent.com/static/fonts/opensans/v5/DXI1ORHCpsQm3Vp6mXoaTaRDOzjiPcYnFooOUGCOsRk.woff') format('woff') !important;
+}
+@font-face {
+  font-family: 'Open Sans' !important;
+  font-style: italic !important;
+  font-weight: 300 !important;
+  src: local('Open Sans Light Italic'), local('OpenSansLight-Italic'), url('https://themes.googleusercontent.com/static/fonts/opensans/v5/PRmiXeptR36kaC0GEAetxvR_54zmj3SbGZQh3vCOwvY.woff') format('woff') !important;
+}
+@font-face {
+  font-family: 'Open Sans' !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  src: local('Open Sans'), local('OpenSans'), url('https://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff') format('woff') !important;
+}
+@font-face {
+  font-family: 'Open Sans' !important;
+  font-style: italic !important;
+  font-weight: 400 !important;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url('https://themes.googleusercontent.com/static/fonts/opensans/v5/xjAJXh38I15wypJXxuGMBrrIa-7acMAeDBVuclsi6Gc.woff') format('woff') !important;
+}
+@font-face {
+  font-family: 'Open Sans' !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url('https://themes.googleusercontent.com/static/fonts/opensans/v5/MTP_ySUJH_bn48VBG8sNSqRDOzjiPcYnFooOUGCOsRk.woff') format('woff') !important;
+}
+@font-face {
+  font-family: 'Open Sans' !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url('https://themes.googleusercontent.com/static/fonts/opensans/v5/k3k702ZOKiLJc3WVjuplzKRDOzjiPcYnFooOUGCOsRk.woff') format('woff') !important;
+}
+@font-face {
+  font-family: 'Open Sans' !important;
+  font-style: normal !important;
+  font-weight: 800 !important;
+  src: local('Open Sans Extrabold'), local('OpenSans-Extrabold'), url('https://themes.googleusercontent.com/static/fonts/opensans/v5/EInbV5DfGHOiMmvb1Xr-hqRDOzjiPcYnFooOUGCOsRk.woff') format('woff') !important;
+}
+/* @end */
 
 /* @group Layout Fixes */
 * { font-family: "open sans", "lucida grande" !important; }
@@ -116,6 +159,13 @@ body { padding:0 !important; margin:0 !important;}
   padding: 0 !important;
 }
 
+#search .search-restrict.goog-flat-menu-button.goog-flat-menu-button-open, #search .search-restrict.goog-flat-menu-button.goog-flat-menu-button-active {
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow   : none !important;
+  -o-box-shadow     : none !important;
+  box-shadow        : none !important;
+}
+
 #search-input, #search .search-restrict { float: none !important; }
 
 #search .jfk-button-action {
@@ -151,13 +201,13 @@ body { padding:0 !important; margin:0 !important;}
   opacity: 1 !important;
 }
 
-.goog-flat-menu-button-hover {
+#top-bar .goog-flat-menu-button-hover {
   -webkit-box-shadow: none !important;
   -moz-box-shadow   : none !important;
   -o-box-shadow     : none !important;
   box-shadow        : none !important;
 }
-.goog-button-base-inner-box {
+#top-bar .goog-button-base-inner-box {
   border-left: 0px solid transparent !important;
   border-right: 0px solid transparent !important;
 }
@@ -313,7 +363,7 @@ body { padding:0 !important; margin:0 !important;}
   margin-left: 0 !important;
   margin-top: 0 !important;
   position: absolute !important;
-  top:-28px !important;
+  top:-30px !important;
   left:170px !important;
   z-index: 999999999 !important;
   padding:0 3px !important;
@@ -326,6 +376,10 @@ body { padding:0 !important; margin:0 !important;}
   border: 0 solid transparent !important;
   color: #fff !important;
   text-shadow: 0 1px rgba(0,0,0,.33) !important;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius   : 0 !important;
+  border-radius        : 0 !important;
+  height: 29px !important;
 }
 
 #lhn-add-subscription-section .jfk-button-primary:before {
@@ -346,7 +400,26 @@ body { padding:0 !important; margin:0 !important;}
   -moz-box-shadow   : none !important;
   -o-box-shadow     : none !important;
   box-shadow        : none !important;
+  background-color: #4c4c4c !important;
 }
+#lhn-add-subscription-section .jfk-button-primary.goog-button-base-open  {
+  background-color: #fff !important;
+  color:#666 !important;
+  text-shadow: 0 1px rgba(0,0,0,0) !important;
+}
+#quick-add-bubble-holder {
+  border: 1px solid #bebebe !important;
+  background: #fff !important;
+  -moz-box-shadow: -1px 1px 1px #ccc !important;
+  -webkit-box-shadow: 0 1px 5px #ccc !important;
+  box-shadow: 0 1px 5px #ccc !important;
+  z-index: 9999 !important;
+  margin-top:-1px !important;
+  margin-left: -1px !important;
+}
+
+#quick-add-close { background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAH1JREFUeNpibGlpYQCCOgYIaGJAALgYC5TTCBX4C8StQFyBJMYAUsSMpBtkrD0QuyKJMTMBiXogrkESRFYAEq9ngnJAVuxgQAVboeIMMEXVQOyBpsgbKg52UzXULTBwBIhtkNwINokNSQEoCGzRgoKNBepwGKhHo8FsgAADALrQFDXVRYuGAAAAAElFTkSuQmCC) no-repeat !important; }
+
 /* @end */
 
 /* @group Viewer Header */
@@ -366,7 +439,7 @@ body { padding:0 !important; margin:0 !important;}
 }
 
 #viewer-top-controls { padding: 3px 0 0 8px !important; }
-.jfk-button { margin-right: 8px !important; }
+#viewer-top-controls .jfk-button { margin-right: 8px !important; }
 #viewer-refresh, #stream-prefs-menu, #viewer-view-options, .jfk-button-narrow,
 #mark-all-as-read-split-button .jfk-button, #mark-all-as-read-split-button .goog-flat-menu-button {
   background-color: #dedede !important;
@@ -399,7 +472,7 @@ body { padding:0 !important; margin:0 !important;}
 }
 
 #viewer-refresh:active, #stream-prefs-menu:active, #viewer-view-options:active, #stream-prefs-menu.goog-button-base-open,
-.jfk-button-narrow:active, .jfk-button-checked, #mark-all-as-read-split-button .jfk-button:active, #mark-all-as-read-split-button .goog-flat-menu-button:active,
+#viewer-top-controls .jfk-button-narrow:active, #viewer-top-controls .jfk-button-checked, #mark-all-as-read-split-button .jfk-button:active, #mark-all-as-read-split-button .goog-flat-menu-button:active,
 #mark-all-as-read-split-button .goog-flat-menu-button-open {
   background-image: -moz-linear-gradient(top, #b4b4b4, #dedede) !important;
   background-image: -webkit-gradient(linear, left top, right top, from(#b4b4b4), to(#dedede)) !important;
@@ -412,25 +485,25 @@ body { padding:0 !important; margin:0 !important;}
   box-shadow        : inset 0 1px 0 #a4a4a4, inset 0 -1px 0 #d9d9d9, 0 1px 0 #dbdbdb !important;
 }
 
-.jfk-button-collapse-left, #mark-all-as-read-split-button .goog-flat-menu-button-collapse-left {
+#viewer-top-controls .jfk-button-collapse-left, #mark-all-as-read-split-button .goog-flat-menu-button-collapse-left {
   -webkit-border-radius: 0 4px 4px 0 !important;
   -moz-border-radius   : 0 4px 4px 0 !important;
   border-radius        : 0 4px 4px 0 !important;
 }
 
-.jfk-button-collapse-right, #mark-all-as-read-split-button .jfk-button-collapse-right {
+#viewer-top-controls .jfk-button-collapse-right, #mark-all-as-read-split-button .jfk-button-collapse-right {
   -webkit-border-radius: 4px 0 0 4px !important;
   -moz-border-radius   : 4px 0 0 4px !important;
   border-radius        : 4px 0 0 4px !important;
   margin-right:0 !important;
 }
 #mark-all-as-read-split-button .goog-flat-menu-button-collapse-left { min-width: 8px !important; }
-.goog-button-base-outer-box {
+#viewer-top-controls .goog-button-base-outer-box {
   border-top: 0 solid transparent !important;
   border-bottom: 0 solid transparent !important;
 }
 
-.goog-button-base-inner-box {
+#viewer-top-controls .goog-button-base-inner-box {
   background-color: transparent !important;
   background-image: none !important;
   background: transparent !important;
@@ -440,17 +513,17 @@ body { padding:0 !important; margin:0 !important;}
   height: 20px !important;
 }
 
-.goog-button-base-content {
+#viewer-top-controls .goog-button-base-content {
   line-height: 20px !important;
   padding: 0 !important;
 }
 
-.goog-menu-button .goog-menu-button-dropdown {
+#viewer-top-controls .goog-menu-button .goog-menu-button-dropdown {
   top: 8px !important;
   right: -3px !important;
 }
 
-.goog-flat-menu-button-dropdown  {
+#viewer-top-controls .goog-flat-menu-button-dropdown  {
   top: 8px !important;
   right: 6px !important;
 }
@@ -463,7 +536,7 @@ body { padding:0 !important; margin:0 !important;}
 #stream-prefs-menu { padding-right: 12px !important;}
 #stream-view-options-container .jfk-button-standard, #item-up-down-buttons .jfk-button-standard {padding:0 2px !important;}
 #item-up-down-buttons { margin-right:8px !important; }
-.jfk-button-standard .jfk-button-img { opacity: .66 !important;}
+#viewer-top-controls .jfk-button-standard .jfk-button-img { opacity: .66 !important;}
 #viewer-translated-by {
   margin-left: 0 !important;
   margin-top: 0 !important;
@@ -546,6 +619,7 @@ body { padding:0 !important; margin:0 !important;}
 .entry .entry-actions .email { background-position: -112px -222px !important; }
 .entry .entry-actions .item-link { background-position: 0px 2px !important; }
 .entry .entry-actions .tag { background-position: -160px -319px !important; }
+.entry .entry-actions .dislike-inactive { background-position: -177px -350px !important; }
 .entry .entry-actions .read-state-unread, .entry .entry-actions .read-state-not-kept-unread { background-position: -64px -126px !important; }
 /* @end */
 
