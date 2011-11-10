@@ -170,7 +170,7 @@ body { padding:0 !important; margin:0 !important;}
 
 #search .jfk-button-action {
   background-color: transparent !important;
-  background-image: url('https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/search.png') !important;
+  background-image: url('images/search.png') !important;
   border: 0 solid transparent !important;
   color: transparent !important;
   width: 13px !important;
@@ -213,6 +213,30 @@ body { padding:0 !important; margin:0 !important;}
 }
 /* @end */
 
+/* @group Menus */
+
+.goog-menu { background: rgba(255,255,255,.9) !important; }
+.goog-menuitem { background: transparent !important; }
+.goog-menuitem-highlight .goog-menuitem-content, .goog-menuitem-hover .goog-menuitem-content {
+  color: white !important;
+  border: 1px solid transparent;
+}
+.goog-menuitem-highlight, .goog-menuitem-hover { border: 0 none !important; }
+.goog-menuitem-highlight {
+  background-color: #51a2d9 !important;
+  background-image: -moz-linear-gradient(top, #65b1e1, #3088cd) !important;
+  background-image: -webkit-gradient(linear, left top, right top, from(#65b1e1), to(#3088cd)) !important;
+  background-image: -webkit-linear-gradient(top, #65b1e1, #3088cd) !important;
+  background-image: -o-linear-gradient(top, #65b1e1, #3088cd) !important;
+  background-image: linear-gradient(top, #65b1e1, #3088cd) !important;
+  -webkit-box-shadow: inset 0 1px 0 #58a5da, inset 0 -1px 0 #2e7bbd, inset 0 2px 0 #6cbae6 !important;
+  -moz-box-shadow   : inset 0 1px 0 #58a5da, inset 0 -1px 0 #2e7bbd, inset 0 2px 0 #6cbae6 !important;
+  -o-box-shadow     : inset 0 1px 0 #58a5da, inset 0 -1px 0 #2e7bbd, inset 0 2px 0 #6cbae6 !important;
+  box-shadow        : inset 0 1px 0 #58a5da, inset 0 -1px 0 #2e7bbd, inset 0 2px 0 #6cbae6 !important;
+}
+
+/* @end */
+
 /* @group SIDEBAR */
 #nav {
   background-color: #e6eaef !important;
@@ -247,30 +271,30 @@ body { padding:0 !important; margin:0 !important;}
   margin-bottom: 2px !important;
 }
 .scroll-tree .folder-icon {
-  background: url('https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/folder.png') no-repeat !important;
+  background: url('images/folder.png') no-repeat !important;
   background-position: 0 0 !important;
 }
 
 .scroll-tree li a.tree-link-selected .folder-icon {
-  background: url('https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/folder-selected.png') no-repeat !important;
+  background: url('images/folder-selected.png') no-repeat !important;
   background-position: 0 0 !important;
 }
 
 .folder-icon, .sub-icon, .tag-icon { opacity: 1 !important; }
 .scroll-tree .collapsed > .toggle, .section-minimized #lhn-selectors-minimize, .section-minimized #lhn-recommendations-minimize, .section-minimized #lhn-subscriptions-minimize  {
-  background: url('https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/arrow-closed.png') no-repeat !important;
+  background: url('images/arrow-closed.png') no-repeat !important;
   background-position: 6px 5px !important;
 }
 .scroll-tree .tree-selected.collapsed .toggle {
-  background: url('https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/arrow-closed-s.png') no-repeat !important;
+  background: url('images/arrow-closed-s.png') no-repeat !important;
   background-position: 7px 5px !important;
 }
 .scroll-tree .expanded > .toggle, #lhn-selectors-minimize, #lhn-recommendations-minimize, #lhn-subscriptions-minimize {
-  background: url('https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/arrow-open.png') no-repeat !important;
+  background: url('images/arrow-open.png') no-repeat !important;
   background-position: 6px 6px !important;
 }
 .scroll-tree .tree-selected.expanded > .toggle {
-  background: url('https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/arrow-open-s.png') no-repeat !important;
+  background: url('images/arrow-open-s.png') no-repeat !important;
   background-position: 6px 5px !important;
 }
 
@@ -310,7 +334,7 @@ body { padding:0 !important; margin:0 !important;}
 .tree-item-action-container { background-color: transparent !important; }
 .section-menubutton {
   background-color: transparent !important;
-  background: url('https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/arrow-grear.png') no-repeat !important;
+  background: url('images/arrow-grear.png') no-repeat !important;
   background-position: center right !important;
   width: 9px !important;
   height: 13px !important;
@@ -319,7 +343,7 @@ body { padding:0 !important; margin:0 !important;}
 }
 
 .scroll-tree .tree-selected > .tree-link-selected > .tree-item-action-container > .section-menubutton {
-  background: url('https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/arrow-grear-s.png') no-repeat !important;
+  background: url('images/arrow-grear-s.png') no-repeat !important;
   background-position: center right !important;
 }
 #lhn-selectors-menubutton, #lhn-subscriptions-menubutton { top:7px !important;}
@@ -328,6 +352,12 @@ body { padding:0 !important; margin:0 !important;}
 }
 .selector:hover, #lhn-selectors .selector:hover {
   background-color: transparent !important;
+}
+
+#directory-selector a {
+  padding-left: 24px !important;
+  background: transparent url("images/browse.png") no-repeat left center !important;
+  margin-left: -2px !important;
 }
 
 .lhn-section-primary { line-height: 26px !important; }
@@ -340,10 +370,10 @@ body { padding:0 !important; margin:0 !important;}
   height: 26px !important;
 }
 #recommendations-tree #recs-tree-item-1-icon {
-  background: url('https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/feed-doc.png') 2px 2px no-repeat !important;
+  background: url('images/feed-doc.png') 2px 2px no-repeat !important;
 }
 #recommendations-tree .folder .link .sub-icon {
-  background: url('https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/feed.png') 2px 2px no-repeat !important;
+  background: url('images/feed.png') 2px 2px no-repeat !important;
 }
 #recommendations-tree-view-all {padding-left: 40px !important;}
 #scrollable-sections-bottom-shadow { border-bottom: 0px solid transparent !important; }
@@ -548,7 +578,7 @@ body { padding:0 !important; margin:0 !important;}
 
 /* @group Viewer */
 #viewer-container {
-  background: url('https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/bg.png') repeat !important;
+  background: url('images/bg.png') repeat !important;
   background-color: #e1e2e3 !important;
 }
 
@@ -583,6 +613,8 @@ body { padding:0 !important; margin:0 !important;}
   border-style: solid !important;
   padding: 0 1em !important;
 }
+#entries.list .expanded .entry-container { background: white !important; }
+
 #current-entry .card { border-color: #4e73d5 !important }
 .card .card-content { padding: 8px 0 5px !important; }
 .entry .entry-author, .entry-comments .comment-time, .entry .entry-date { color: #aaa !important; }
@@ -635,6 +667,8 @@ body { padding:0 !important; margin:0 !important;}
 ::-webkit-scrollbar-track { border-width: 0 !important; }
 /* @end */
 
-/* @group AD BLOCK  */
-img[src^="http://feeds.feedburner.com/~ff/"] { display:none !important; }
+/* @group AD BLOCKERS  */
+#ads, iframe[src^="http://feedads."],
+img[src^="http://feeds.feedburner.com/~ff/"],
+img[src^="http://feedads.g.doubleclick.net/"] { display:none !important; }
 /* @end */
