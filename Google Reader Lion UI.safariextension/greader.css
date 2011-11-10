@@ -213,9 +213,50 @@ body { padding:0 !important; margin:0 !important;}
 }
 /* @end */
 
+/* @group Home */
+
+#home { background-image: url("images/NSLinenBackgroundPattern.png"); }
+#home #sections-header  {
+  background-image: -moz-linear-gradient(top, #c2c2c2, #adadad) !important;
+  background-image: -webkit-gradient(linear, left top, right top, from(#c2c2c2), to(#adadad)) !important;
+  background-image: -webkit-linear-gradient(top, #c2c2c2, #adadad) !important;
+  background-image: -o-linear-gradient(top, #c2c2c2, #adadad) !important;
+  background-image: linear-gradient(top, #c2c2c2, #adadad) !important;
+  
+  height: 38px !important;
+  margin-right: 0 !important;
+  border-bottom: 1px solid #797979 !important;
+  -webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
+  -moz-box-shadow   : inset 0 -1px 0 rgba(255, 255, 255, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
+  -o-box-shadow     : inset 0 -1px 0 rgba(255, 255, 255, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
+  box-shadow        : inset 0 -1px 0 rgba(255, 255, 255, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
+}
+
+#home #sections-header .overview-section-header {
+  color: White !important;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .4) !important;
+}
+
+#home .overview-segment, #home #right-section {
+  background: rgba(255, 255, 255, .9) !important;
+  padding: 10px !important;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 5px #888 !important;
+  -moz-box-shadow: 0px 1px 5px #888 !important;
+  box-shadow: 0 1px 5px #888 !important;
+}
+#home #right-section {
+ width: 30% !important;
+ margin-right: 15px !important;
+}
+
+/* @end */
+
 /* @group Menus */
 
-.goog-menu { background: rgba(255,255,255,.9) !important; }
+.goog-menu { background: rgba(255,255,255,.95) !important; }
 .goog-menuitem { background: transparent !important; }
 .goog-menuitem-highlight .goog-menuitem-content, .goog-menuitem-hover .goog-menuitem-content {
   color: white !important;
@@ -454,18 +495,18 @@ body { padding:0 !important; margin:0 !important;}
 
 /* @group Viewer Header */
 #viewer-header {
-  background-image: -moz-linear-gradient(top, #d8d8d8, #cacaca) !important;
-  background-image: -webkit-gradient(linear, left top, right top, from(#d8d8d8), to(#cacaca)) !important;
-  background-image: -webkit-linear-gradient(top, #d8d8d8, #cacaca) !important;
-  background-image: -o-linear-gradient(top, #d8d8d8, #cacaca) !important;
-  background-image: linear-gradient(top, #d8d8d8, #cacaca) !important;
+  background-image: -moz-linear-gradient(top, #c2c2c2, #adadad) !important;
+  background-image: -webkit-gradient(linear, left top, right top, from(#c2c2c2), to(#adadad)) !important;
+  background-image: -webkit-linear-gradient(top, #c2c2c2, #adadad) !important;
+  background-image: -o-linear-gradient(top, #c2c2c2, #adadad) !important;
+  background-image: linear-gradient(top, #c2c2c2, #adadad) !important;
   height: 38px !important;
   margin-right: 0 !important;
   border-bottom: 1px solid #797979 !important;
-  -webkit-box-shadow: inset 0 -1px 0 #cfcece, inset 0 1px 0 #f0f0f0 !important;
-  -moz-box-shadow   : inset 0 -1px 0 #cfcece, inset 0 1px 0 #f0f0f0 !important;
-  -o-box-shadow     : inset 0 -1px 0 #cfcece, inset 0 1px 0 #f0f0f0 !important;
-  box-shadow        : inset 0 -1px 0 #cfcece, inset 0 1px 0 #f0f0f0 !important;
+  -webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
+  -moz-box-shadow   : inset 0 -1px 0 rgba(255, 255, 255, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
+  -o-box-shadow     : inset 0 -1px 0 rgba(255, 255, 255, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
+  box-shadow        : inset 0 -1px 0 rgba(255, 255, 255, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
 }
 
 #viewer-top-controls { padding: 3px 0 0 8px !important; }
@@ -630,7 +671,7 @@ body { padding:0 !important; margin:0 !important;}
   color:#3f3f3f !important;
   text-shadow: 0 1px 0 rgba(255,255,255,.75) !important;
 }
-#sections-holder { padding-right: 0 !important; }
+#sections-holder { padding-right: 0 !important; height: auto !important; }
 .preview-interruption {
   -webkit-border-radius: 5px !important;
   -moz-border-radius   : 5px !important;
