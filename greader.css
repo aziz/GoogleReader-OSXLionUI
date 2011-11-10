@@ -49,7 +49,7 @@
 /* @end */
 
 /* @group Layout Fixes */
-* { font-family: "open sans", "lucida grande" !important; }
+* { font-family: "open sans", "lucida grande", "sans-serif" !important; }
 #gbz, #logo-container, #gbg6 { display:none !important; }
 .card .card-bottom {border:0 !important;}
 .card-common .card-actions {background-color:transparent !important;}
