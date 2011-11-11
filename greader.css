@@ -768,6 +768,10 @@ img[src^="http://feedads.g.doubleclick.net/"] { display:none !important; }
 /* @group Addons Support */
 .gr_add {
   background-image: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/ril.png") !important;
+  background-position: 5px 2px !important;
+}
+.gr_add_checked {
+  background-image: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/ril-s.png") !important;
 }
 /* @end */
 
