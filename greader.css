@@ -451,11 +451,29 @@ body { padding:0 !important; margin:0 !important;}
   width: 12px !important;
   height: 8px !important;
   border-width: 0 !important;
-  margin-top: 1px !important ;
+  margin-top: 2px !important ;
   background: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/arrow-full-down.png") no-repeat !important;
 }
 .fullscreen-top-toggle #chrome-fullscreen-top-toggle-icon {
   background: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/arrow-full-up.png") no-repeat !important;
+}
+.lhn-hidden #entries { padding-left: 0 !important; }
+.lhn-hidden #viewer-top-controls { margin-left: 0 !important; }
+.lhn-hidden #chrome-title { margin-left: 0 !important; }
+.lhn-menu #nav {
+  left: 5px !important;
+  margin-top: 33px !important;
+  border: 1px solid #b4b4b4 !important;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.5), 0 8px 18px rgba(0,0,0,.3) !important;
+  -moz-box-shadow:    inset 0 1px 0 rgba(255,255,255,.5), 0 8px 18px rgba(0,0,0,.3) !important;
+  -o-box-shadow:      inset 0 1px 0 rgba(255,255,255,.5), 0 8px 18px rgba(0,0,0,.3) !important;
+  box-shadow:         inset 0 1px 0 rgba(255,255,255,.5), 0 8px 18px rgba(0,0,0,.3) !important;
+  -webkit-border-radius: 4px !important;
+  -moz-border-radius   : 4px !important;
+  border-radius        : 4px !important;
+  -moz-background-clip   : padding !important;
+  -webkit-background-clip: padding-box !important;
+  background-clip        : padding-box !important;
 }
 /* @end */
 
@@ -478,7 +496,7 @@ body { padding:0 !important; margin:0 !important;}
 #sections-header { margin-bottom: 0 !important; }
 #viewer-top-controls { padding: 3px 0 0 8px !important; }
 #viewer-top-controls .jfk-button { margin-right: 8px !important; }
-#viewer-refresh, #stream-prefs-menu, #viewer-view-options, .jfk-button-narrow,
+#chrome-lhn-menu, #viewer-refresh, #stream-prefs-menu, #viewer-view-options, .jfk-button-narrow,
 #mark-all-as-read-split-button .jfk-button, #mark-all-as-read-split-button .goog-flat-menu-button {
   background-color: #dedede !important;
   background-image: -moz-linear-gradient(top, #f2f2f2, #d0d0d0) !important;
@@ -509,7 +527,7 @@ body { padding:0 !important; margin:0 !important;}
   text-shadow: 0 1px 0px rgba(255,255,255,.75) !important;
 }
 
-#viewer-refresh:active, #stream-prefs-menu:active, #viewer-view-options:active, #stream-prefs-menu.goog-button-base-open,
+#chrome-lhn-menu:active, #chrome-lhn-menu.goog-button-base-open, #viewer-refresh:active, #stream-prefs-menu:active, #viewer-view-options:active, #stream-prefs-menu.goog-button-base-open,
 #viewer-top-controls .jfk-button-narrow:active, #viewer-top-controls .jfk-button-checked, #mark-all-as-read-split-button .jfk-button:active, #mark-all-as-read-split-button .goog-flat-menu-button:active,
 #mark-all-as-read-split-button .goog-flat-menu-button-open {
   background-image: -moz-linear-gradient(top, #b4b4b4, #dedede) !important;
@@ -522,7 +540,7 @@ body { padding:0 !important; margin:0 !important;}
   -o-box-shadow     : inset 0 1px 0 #a4a4a4, inset 0 -1px 0 #d9d9d9, 0 1px 0 #dbdbdb !important;
   box-shadow        : inset 0 1px 0 #a4a4a4, inset 0 -1px 0 #d9d9d9, 0 1px 0 #dbdbdb !important;
 }
-
+#chrome-lhn-menu {margin-right: 8px !important;}
 #viewer-top-controls .jfk-button-collapse-left, #mark-all-as-read-split-button .goog-flat-menu-button-collapse-left {
   -webkit-border-radius: 0 4px 4px 0 !important;
   -moz-border-radius   : 0 4px 4px 0 !important;
@@ -571,7 +589,7 @@ body { padding:0 !important; margin:0 !important;}
   margin:0 8px 0 0 !important;
 }
 #mark-all-as-read-split-button { margin:0 8px 0 0 !important; }
-#stream-prefs-menu { padding-right: 12px !important;}
+#stream-prefs-menu, #chrome-lhn-menu { padding-right: 12px !important;}
 #stream-view-options-container .jfk-button-standard, #item-up-down-buttons .jfk-button-standard {padding:0 2px !important;}
 #item-up-down-buttons { margin-right:8px !important; }
 #viewer-top-controls .jfk-button-standard .jfk-button-img { opacity: .66 !important;}

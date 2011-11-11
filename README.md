@@ -25,6 +25,7 @@ Feel free to fork this repo and add your changes. make sure to make a pull reque
 * Safari extension added (courtesy of [Vidal van Bergen](https://github.com/vidalvanbergen))
 * Adding support for country specific google domains
 * Using browser default sans-serif font if the browser does not support web fonts
+* Better fullscreen
 * Minor bug fixes and improvements
 
 #### 1.0
