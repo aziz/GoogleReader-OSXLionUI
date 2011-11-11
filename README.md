@@ -17,7 +17,20 @@ For Chrome and Firefox:
 ## Contributing
 
 Feel free to fork this repo and add your changes. make sure to make a pull request so that I can merge your changes and share it with others. 
-  
+
+[See the full list of contributors](https://github.com/aziz/Google-Reader-Lion-UI/contributors)
+
+## History ##
+#### 1.1
+* Safari extension added (courtesy of [Vidal van Bergen](https://github.com/vidalvanbergen))
+* Adding support for country specific google domains
+* Using browser default sans-serif font if the browser does not support web fonts
+* Minor bug fixes and improvements
+
+#### 1.0
+* Initial Release
+
+
   
 ------
 Copyright &copy; 2011 Allen Bargi

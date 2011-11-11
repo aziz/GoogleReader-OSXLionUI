@@ -1,10 +1,10 @@
-/*! Copyright (c) 2011 Allen Bargi.  
+/*! Copyright (c) 2011 Allen Bargi.
   twitter: @aziz
   github: http://github.com/aziz/Google-Reader-Lion-UI
-*/
 
-@namespace url(http://www.w3.org/1999/xhtml);
-@-moz-document regexp("https?://www.google.*/reader/.*")   {
+  Version: 1.1
+  Release Date: 2011-11-11
+*/
 
 /* @group Fonts */
 @font-face {
@@ -57,8 +57,7 @@
 .card .card-bottom {border:0 !important;}
 .card-common .card-actions {background-color:transparent !important;}
 body { padding:0 !important; margin:0 !important;}
-#viewer-entries-container { padding-bottom: 13px !important; }
-#scrollable-sections { padding-bottom: 13px !important; }
+#viewer-entries-container, #sections-holder, #scrollable-sections { padding-bottom: 13px !important; }
 .goog-modalpopup-bg, .modal-dialog-bg {
   background: #000 !important;
   z-index: 99999 !important;
@@ -160,6 +159,7 @@ body { padding:0 !important; margin:0 !important;}
   line-height: 21px !important;
   top: 1px !important;
   padding: 0 !important;
+  color: #666 !important;
 }
 
 #search .search-restrict.goog-flat-menu-button.goog-flat-menu-button-open, #search .search-restrict.goog-flat-menu-button.goog-flat-menu-button-active {
@@ -387,7 +387,7 @@ body { padding:0 !important; margin:0 !important;}
   background-image: none !important;
   border: 0 solid transparent !important;
   color: #fff !important;
-  text-shadow: 0 1px rgba(0,0,0,.33) !important;
+  text-shadow: 1px 1px rgba(0,0,0,.33) !important;
   -webkit-border-radius: 0 !important;
   -moz-border-radius   : 0 !important;
   border-radius        : 0 !important;
@@ -435,7 +435,7 @@ body { padding:0 !important; margin:0 !important;}
 /* @end */
 
 /* @group Viewer Header */
-#viewer-header {
+#viewer-header, #sections-header {
   background-image: -moz-linear-gradient(top, #d8d8d8, #cacaca) !important;
   background-image: -webkit-gradient(linear, left top, right top, from(#d8d8d8), to(#cacaca)) !important;
   background-image: -webkit-linear-gradient(top, #d8d8d8, #cacaca) !important;
@@ -443,13 +443,13 @@ body { padding:0 !important; margin:0 !important;}
   background-image: linear-gradient(top, #d8d8d8, #cacaca) !important;
   height: 38px !important;
   margin-right: 0 !important;
-  border-bottom: 1px solid #797979 !important;  
+  border-bottom: 1px solid #797979 !important;
   -webkit-box-shadow: inset 0 -1px 0 #cfcece, inset 0 1px 0 #f0f0f0 !important;
   -moz-box-shadow   : inset 0 -1px 0 #cfcece, inset 0 1px 0 #f0f0f0 !important;
   -o-box-shadow     : inset 0 -1px 0 #cfcece, inset 0 1px 0 #f0f0f0 !important;
   box-shadow        : inset 0 -1px 0 #cfcece, inset 0 1px 0 #f0f0f0 !important;
 }
-
+#sections-header { margin-bottom: 0 !important; }
 #viewer-top-controls { padding: 3px 0 0 8px !important; }
 #viewer-top-controls .jfk-button { margin-right: 8px !important; }
 #viewer-refresh, #stream-prefs-menu, #viewer-view-options, .jfk-button-narrow,
@@ -554,13 +554,19 @@ body { padding:0 !important; margin:0 !important;}
   margin-top: 0 !important;
   line-height: 22px !important;
 }
-#viewer-translate-revert-link, #viewer-recommendations-return, #no-entries-msg .link { color: #08c !important; }
-.overview-section-header {font-weight: 600 !important;font-size: 18px !important;}
+#viewer-translate-revert-link, #viewer-recommendations-return,
+#no-entries-msg .link, #recent-activity .recent-stream-title  { color: #08c !important; }
+.overview-section-header {
+  font-weight: 300 !important;
+  font-size: 18px !important;
+  color: #343434 !important;
+  text-shadow: 0 1px 0 rgba(255,255,255,.66) !important;
+}
 /* @end */
 
 /* @group Viewer */
 #viewer-container {
-  background: url('images/bg.png') repeat !important;
+  background: url('https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/bg.png') repeat !important;
   background-color: #e1e2e3 !important;
 }
 
@@ -596,6 +602,22 @@ body { padding:0 !important; margin:0 !important;}
   padding: 0 1em !important;
 }
 #entries.list .expanded .entry-container { background: white !important; }
+#entries.list .entry .collapsed { border-width: 0 0 1px 0 !important;}
+#entries.list #current-entry.expanded .entry-actions {
+  border-width: 0 !important;
+  background-color: #fff !important;
+}
+#entries.list #current-entry.expanded .entry-actions .item-star {
+  position: relative !important;
+  left:7px !important;
+  top:1px !important;
+}
+.entry .entry-icons .item-star {
+  position: relative !important;
+  left: 2px !important;
+  top: 1px !important;
+}
+.entry .entry-icons { margin-left: 0 !important; }
 #current-entry .card { border-color: #4e73d5 !important }
 .card .card-content { padding: 8px 0 5px !important; }
 .entry .entry-author, .entry-comments .comment-time, .entry .entry-date { color: #aaa !important; }
@@ -612,71 +634,94 @@ body { padding:0 !important; margin:0 !important;}
   text-shadow: 0 1px 0 rgba(255,255,255,.75) !important;
 }
 #sections-holder { padding-right: 0 !important; }
-.preview-interruption {
+.preview-interruption, #team-messages {
   -webkit-border-radius: 5px !important;
   -moz-border-radius   : 5px !important;
   border-radius        : 5px !important;
   -moz-background-clip   : padding !important;
   -webkit-background-clip: padding-box !important;
   background-clip        : padding-box !important;
-  background-color: rgba(249, 237, 190,.77) !important;
-  -webkit-box-shadow: inset 0 0 4px #b3986a !important;
-  -moz-box-shadow   : inset 0 0 4px #b3986a !important;
-  -o-box-shadow     : inset 0 0 4px #b3986a !important;
-  box-shadow        : inset 0 0 4px #b3986a !important;
+  background-color: rgba(249, 237, 190,.88) !important;
+  -webkit-box-shadow: 0 1px 3px #888 !important;
+  -moz-box-shadow   : 0 1px 3px #888 !important;
+  -o-box-shadow     : 0 1px 3px #888 !important;
+  box-shadow        : 0 1px 3px #888 !important;
+  background-image: -moz-linear-gradient(top, #fcf6d2, #faeaba);
+  background-image: -webkit-gradient(linear, left top, right top, from(#fcf6d2), to(#faeaba));
+  background-image: -webkit-linear-gradient(top, #fcf6d2, #faeaba);
+  background-image: -o-linear-gradient(top, #fcf6d2, #faeaba);
+  background-image: linear-gradient(top, #fcf6d2, #faeaba);
 }
 .preview-interruption-related-streams {
   background: transparent !important;
   border: 1px solid transparent !important;
 }
+.entry .entry-actions {padding: 6px 0 !important;}
 .entry .entry-actions .email { background-position: -112px -222px !important; }
 .entry .entry-actions .item-link { background-position: 0px 2px !important; }
 .entry .entry-actions .tag { background-position: -160px -319px !important; }
 .entry .entry-actions .dislike-inactive { background-position: -177px -350px !important; }
 .entry .entry-actions .read-state-unread, .entry .entry-actions .read-state-not-kept-unread { background-position: -64px -126px !important; }
+.entry .entry-actions .read-state-kept-unread { background-position: -80px -158px !important; }
+.entry .entry-actions .sharebox {
+  background-image: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/share.png") !important;
+  background-position: 0px 2px !important;
+}
+.entry .entry-actions .sharebox:hover {
+  background-image: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/share-s.png") !important;
+}
+#footer {
+  border-top: 0 solid transparent !important;
+  color: rgba(0,0,0,0) !important;
+}
+#footer .copyright {color: rgba(0,0,0,.75);}
+#footer a {text-decoration: none !important; }
+#chrome.page-view #viewer-page-container { background: transparent !important;}
 /* @end */
 
 /* @group Pages-Home */
-#home { background-image: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/bg-d1.png"); }
-#sections-header  {
-  background-image: -moz-linear-gradient(top, #c2c2c2, #adadad) !important;
-  background-image: -webkit-gradient(linear, left top, right top, from(#c2c2c2), to(#adadad)) !important;
-  background-image: -webkit-linear-gradient(top, #c2c2c2, #adadad) !important;
-  background-image: -o-linear-gradient(top, #c2c2c2, #adadad) !important;
-  background-image: linear-gradient(top, #c2c2c2, #adadad) !important;
-  height: 38px !important;
-  margin-right: 0 !important;
-  border-bottom: 1px solid #797979 !important;
-  -webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
-  -moz-box-shadow   : inset 0 -1px 0 rgba(255, 255, 255, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
-  -o-box-shadow     : inset 0 -1px 0 rgba(255, 255, 255, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
-  box-shadow        : inset 0 -1px 0 rgba(255, 255, 255, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
+#home { background-image: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/bg-d1.png") !important;  }
+#sections-holder {padding-top: 16px !important;}
+#overview .overview-segment {
+  margin-top: 0 !important;
+  margin-bottom: 16px !important;
 }
-
-#sections-header .overview-section-header {
-  color: #fff !important;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, .4) !important;
-}
-
-#home .overview-segment, #home #right-section {
-  background: rgba(255, 255, 255, .9) !important;
-  padding: 10px !important;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 1px 5px #888 !important;
-  -moz-box-shadow: 0px 1px 5px #888 !important;
-  box-shadow: 0 1px 5px #888 !important;
-}
+#left-section .overview-section { padding: 0 0 0 12px !important; }
 #home #right-section {
  width: 30% !important;
- margin-right: 15px !important;
+ margin-right: 16px !important;
+}
+#home .overview-segment, #home #right-section {
+  background: rgba(255, 255, 255, .9) !important;
+  padding: 12px !important;
+  -webkit-border-radius: 5px !important;
+  -moz-border-radius: 5px !important;
+  border-radius: 5px !important;
+  -webkit-box-shadow: 0 1px 3px #888 !important;
+  -moz-box-shadow   : 0 1px 3px #888 !important;
+  -o-box-shadow     : 0 1px 3px #888 !important;
+  box-shadow        : 0 1px 3px #888 !important;
+}
+#recent-activity .recent h4 {
+  font-size: 15px !important;
+  text-transform: uppercase !important;
+}
+#recent-activity .recent h4 a { color: #6f7e8b !important; }
+#team-messages {
+  padding:12px !important;
+  margin-top: 0 !important;
+}
+#team-messages .section-header {
+  color: #343434 !important;
+  font-size: 12px !important;
+  border-bottom: 0 solid transparent !important;
 }
 /* @end */
 
 /* @group Pages-Trends */
-#chrome.page-view #viewer-page-container {
-  background: transparent !important;
+#trends-item-count-header {
+  color: #343434 !important;
+  text-shadow:1px 1px rgba(255,255,255,.75) !important;
 }
 /* @end */
 
@@ -685,7 +730,7 @@ body { padding:0 !important; margin:0 !important;}
 .goog-menuitem { background: transparent !important; }
 .goog-menuitem-highlight .goog-menuitem-content, .goog-menuitem-hover .goog-menuitem-content {
   color: white !important;
-  border: 1px solid transparent;
+  border: 1px solid transparent !important;
 }
 .goog-menuitem-highlight, .goog-menuitem-hover { border: 0 none !important; }
 .goog-menuitem-highlight {
@@ -720,4 +765,9 @@ img[src^="http://feeds.feedburner.com/~ff/"],
 img[src^="http://feedads.g.doubleclick.net/"] { display:none !important; }
 /* @end */
 
+/* @group Addons Support */
+.gr_add {
+  background-image: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/ril.png") !important;
 }
+/* @end */
+
