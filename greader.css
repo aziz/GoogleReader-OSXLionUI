@@ -434,6 +434,31 @@ body { padding:0 !important; margin:0 !important;}
 
 /* @end */
 
+/* @group Fullscreen */
+.fullscreen #chrome-fullscreen-top-toggle {
+  background-image: -moz-linear-gradient(top, #d8d8d8, #cacaca) !important;
+  background-image: -webkit-gradient(linear, left top, right top, from(#d8d8d8), to(#cacaca)) !important;
+  background-image: -webkit-linear-gradient(top, #d8d8d8, #cacaca) !important;
+  background-image: -o-linear-gradient(top, #d8d8d8, #cacaca) !important;
+  background-image: linear-gradient(top, #d8d8d8, #cacaca) !important;
+  border-bottom: 1px solid #797979 !important;
+  -webkit-box-shadow: inset 0 -1px 0 #cfcece, inset 0 1px 0 #f0f0f0 !important;
+  -moz-box-shadow   : inset 0 -1px 0 #cfcece, inset 0 1px 0 #f0f0f0 !important;
+  -o-box-shadow     : inset 0 -1px 0 #cfcece, inset 0 1px 0 #f0f0f0 !important;
+  box-shadow        : inset 0 -1px 0 #cfcece, inset 0 1px 0 #f0f0f0 !important;
+}
+#chrome-fullscreen-top-toggle-icon {
+  width: 12px !important;
+  height: 8px !important;
+  border-width: 0 !important;
+  margin-top: 1px !important ;
+  background: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/arrow-full-down.png") no-repeat !important;
+}
+.fullscreen-top-toggle #chrome-fullscreen-top-toggle-icon {
+  background: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/arrow-full-up.png") no-repeat !important;
+}
+/* @end */
+
 /* @group Viewer Header */
 #viewer-header, #sections-header {
   background-image: -moz-linear-gradient(top, #d8d8d8, #cacaca) !important;
@@ -449,6 +474,7 @@ body { padding:0 !important; margin:0 !important;}
   -o-box-shadow     : inset 0 -1px 0 #cfcece, inset 0 1px 0 #f0f0f0 !important;
   box-shadow        : inset 0 -1px 0 #cfcece, inset 0 1px 0 #f0f0f0 !important;
 }
+#viewer-header-container { border-bottom: 0 solid transparent !important; }
 #sections-header { margin-bottom: 0 !important; }
 #viewer-top-controls { padding: 3px 0 0 8px !important; }
 #viewer-top-controls .jfk-button { margin-right: 8px !important; }
@@ -669,6 +695,10 @@ body { padding:0 !important; margin:0 !important;}
 }
 .entry .entry-actions .sharebox:hover {
   background-image: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/share-s.png") !important;
+}
+.item-link-drop-down-arrow {
+  position: relative !important;
+  top: -2px !important;
 }
 #footer {
   border-top: 0 solid transparent !important;
