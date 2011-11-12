@@ -214,6 +214,10 @@ body { padding:0 !important; margin:0 !important;}
   border-left: 0px solid transparent !important;
   border-right: 0px solid transparent !important;
 }
+.message-area-container {
+  left:264px !important;
+  z-index: 999999 !important;
+}
 /* @end */
 
 /* @group SIDEBAR */
@@ -360,6 +364,7 @@ body { padding:0 !important; margin:0 !important;}
 #recommendations-tree-view-all {padding-left: 40px !important;}
 #scrollable-sections-bottom-shadow { border-bottom: 0px solid transparent !important; }
 #scrollable-sections-top-shadow { border-top: 0px solid transparent !important; }
+#sub-tree {padding-bottom: 24px !important;}
 /* @end */
 
 /* @group Add Subscription button */
@@ -725,6 +730,12 @@ body { padding:0 !important; margin:0 !important;}
 #footer .copyright {color: rgba(0,0,0,.75);}
 #footer a {text-decoration: none !important; }
 #chrome.page-view #viewer-page-container { background: transparent !important;}
+#no-entries-msg {
+  background: transparent !important;
+  border: 0 solid transparent !important;
+  color:#666 !important;
+}
+#no-entries-msg h2 { font-weight: 300 !important; }
 /* @end */
 
 /* @group Pages-Home */
@@ -774,6 +785,7 @@ body { padding:0 !important; margin:0 !important;}
 /* @end */
 
 /* @group Menus */
+/*.goog-menu-vertical {display: block !important;}*/
 .goog-menu { background: rgba(255,255,255,.95) !important; }
 .goog-menuitem { background: transparent !important; }
 .goog-menuitem-highlight .goog-menuitem-content, .goog-menuitem-hover .goog-menuitem-content {
@@ -823,3 +835,14 @@ img[src^="http://feedads.g.doubleclick.net/"] { display:none !important; }
 }
 /* @end */
 
+/* @group EXPERIMENTAL */
+#title-and-status-holder {
+  position: fixed !important;
+  right: 0 !important;
+  left: 264px !important;
+  z-index: 9 !important;
+}
+.lhn-hidden #title-and-status-holder { left: 0 !important; }
+.samedir { margin-top: 24px !important; }
+.cards .entry-0 { padding-top: 5px !important; }
+/* @end */
