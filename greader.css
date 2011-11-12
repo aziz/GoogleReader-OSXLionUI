@@ -235,13 +235,11 @@ body { padding:0 !important; margin:0 !important;}
   text-shadow: 0 1px 0 rgba(255,255,255,.75) !important;
 }
 #overview-selector, #lhn-selectors .selector, .scroll-tree .lhn-section-primary, #sub-tree-header { border-left: 3px solid transparent !important; }
-.folder .folder > a > .icon { margin-left: 24px !important; }
+.folder .folder > a > .icon, .folder .tag-icon, .folder .sub-icon { margin-left: 24px !important; }
 .folder .folder .folder-toggle { margin-left: 8px !important; }
-.folder .sub-icon { margin-left: 24px !important; }
 .folder .folder > ul .icon { margin-left: 32px !important; }
-#sub-tree-header { padding-left: 14px !important; }
 .section-minimize { left:4px !important; top:9px !important; }
-.folder .name.name-d-0, #lhn-selectors .selector, #overview-selector { padding-left: 14px !important; }
+.folder .name.name-d-0, #lhn-selectors .selector, #overview-selector, #sub-tree-header { padding-left: 14px !important; }
 .selectors-footer, .lhn-section-footer {
   margin-left: 0 !important;
   margin-right: 1px !important;
@@ -257,12 +255,18 @@ body { padding:0 !important; margin:0 !important;}
   background: url('https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/folder.png') no-repeat !important;
   background-position: 0 0 !important;
 }
-
 .scroll-tree li a.tree-link-selected .folder-icon {
   background: url('https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/folder-selected.png') no-repeat !important;
   background-position: 0 0 !important;
 }
-
+.scroll-tree .tag-icon {
+  background: url('https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/tag.png') no-repeat !important;
+  background-position: 2px 5px !important;
+}
+.scroll-tree li a.tree-link-selected .tag-icon {
+  background: url('https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/tag-s.png') no-repeat !important;
+  background-position: 2px 5px !important;
+}
 .folder-icon, .sub-icon, .tag-icon { opacity: 1 !important; }
 .scroll-tree .collapsed > .toggle, .section-minimized #lhn-selectors-minimize, .section-minimized #lhn-recommendations-minimize, .section-minimized #lhn-subscriptions-minimize  {
   background: url('https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/arrow-closed.png') no-repeat !important;
