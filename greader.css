@@ -382,7 +382,7 @@ body { padding:0 !important; margin:0 !important;}
   position: absolute !important;
   top:-30px !important;
   left:170px !important;
-  z-index: 999999999 !important;
+  z-index: 99999 !important;
   padding:0 3px !important;
   width: 70px !important;
 }
@@ -480,6 +480,22 @@ body { padding:0 !important; margin:0 !important;}
   -webkit-background-clip: padding-box !important;
   background-clip        : padding-box !important;
 }
+#chrome-lhn-menu .goog-button-base-outer-box {
+  border-top: 0 solid transparent !important;
+  border-bottom: 0 solid transparent !important; 
+}
+#chrome-lhn-menu .goog-button-base-inner-box {
+  background: transparent !important;
+  background-image: none !important;
+  border-left: 0 solid transparent !important;
+  border-right: 0 solid transparent !important;
+  margin: 0 !important;
+  height: 20px !important;
+}
+#chrome-lhn-menu .goog-button-base-content { padding-top: 0 !important; }
+#chrome-lhn-menu.goog-menu-button .goog-menu-button-dropdown { top: 6px !important; right: 3px !important; }
+#sections-header .lhn-nav-button-container { margin: 2px 8px 0 !important; }
+.overview-section-header { padding: 0 1em 0 0 !important; }
 /* @end */
 
 /* @group Viewer Header */
@@ -593,6 +609,7 @@ body { padding:0 !important; margin:0 !important;}
   padding-right: 18px !important;
   margin:0 8px 0 0 !important;
 }
+#chrome.search-stream #chrome-view-links { background: transparent !important; }
 #mark-all-as-read-split-button { margin:0 8px 0 0 !important; }
 #stream-prefs-menu, #chrome-lhn-menu { padding-right: 12px !important;}
 #stream-view-options-container .jfk-button-standard, #item-up-down-buttons .jfk-button-standard {padding:0 2px !important;}
