@@ -280,7 +280,7 @@ body { padding:0 !important; margin:0 !important;}
   background: url('https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/arrow-open-s.png') no-repeat !important;
   background-position: 6px 5px !important;
 }
-
+.folder .folder .name-text { max-width: 155px !important; }
 #lhn-selectors-minimize, .section-minimized #lhn-selectors-minimize,
 #lhn-recommendations-minimize, .section-minimized #lhn-recommendations-minimize,
 #lhn-subscriptions-minimize, .section-minimized #lhn-subscriptions-minimize { background-position: 0 0 !important; }
@@ -739,7 +739,6 @@ body { padding:0 !important; margin:0 !important;}
 /* @end */
 
 /* @group Pages-Home */
-#home { background-image: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/bg-d1.png") !important;  }
 #sections-holder {padding-top: 16px !important;}
 #overview .overview-segment {
   margin-top: 0 !important;
