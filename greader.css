@@ -805,6 +805,11 @@ body { padding:0 !important; margin:0 !important;}
   -o-box-shadow     : inset 0 1px 0 #58a5da, inset 0 -1px 0 #2e7bbd, inset 0 2px 0 #6cbae6 !important;
   box-shadow        : inset 0 1px 0 #58a5da, inset 0 -1px 0 #2e7bbd, inset 0 2px 0 #6cbae6 !important;
 }
+.goog-option-selected {
+  background-image: url(//ssl.gstatic.com/ui/v1/menu/checkmark.png) !important;
+  background-repeat: no-repeat !important;
+  background-position: left center !important;
+}
 /* @end */
 
 /* @group Scrollbar */
