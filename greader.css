@@ -608,7 +608,7 @@ body { padding:0 !important; margin:0 !important;}
 #stream-prefs-menu, #chrome-lhn-menu { padding-right: 12px !important;}
 #stream-view-options-container .jfk-button-standard, #item-up-down-buttons .jfk-button-standard {padding:0 2px !important;}
 #item-up-down-buttons { margin-right:8px !important; }
-#viewer-top-controls .jfk-button-standard .jfk-button-img { opacity: .66 !important;}
+#viewer-top-controls .jfk-button-standard .jfk-button-img { opacity: 1 !important;}
 #viewer-translated-by {
   margin-left: 0 !important;
   margin-top: 0 !important;
@@ -621,6 +621,20 @@ body { padding:0 !important; margin:0 !important;}
   font-size: 18px !important;
   color: #343434 !important;
   text-shadow: 0 1px 0 rgba(255,255,255,.66) !important;
+}
+#viewer-refresh img {
+  width: 0 !important;
+  height: 0 !important;
+  padding:14px 0 0 14px !important;
+  margin-top: -4px !important;
+  background: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/refresh.png") no-repeat !important;
+}
+#entries-up img {
+  width: 0 !important;
+  height: 0 !important;
+  padding:14px 0 0 14px !important;
+  margin-top: -4px !important;
+  background: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/arrow-up.png") no-repeat !important;  
 }
 /* @end */
 
