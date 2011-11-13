@@ -862,11 +862,11 @@ img[src="/reader/ui/1567066642-down-arrow.png"] {display: none !important;}
 }
 
 .goog-menuitem.goog-menuitem-highlight.goog-option-selected {
-  background-image: url(//ssl.gstatic.com/ui/v1/menu/checkmark.png), -moz-linear-gradient(top, #6388f8, #215ff6) !important;
-  background-image: url(//ssl.gstatic.com/ui/v1/menu/checkmark.png), -webkit-gradient(linear, left top, right top, from(#6388f8), to(#215ff6)) !important;
-  background-image: url(//ssl.gstatic.com/ui/v1/menu/checkmark.png), -webkit-linear-gradient(top, #6388f8, #215ff6) !important;
-  background-image: url(//ssl.gstatic.com/ui/v1/menu/checkmark.png), -o-linear-gradient(top, #6388f8, #215ff6) !important;
-  background-image: url(//ssl.gstatic.com/ui/v1/menu/checkmark.png), linear-gradient(top, #6388f8, #215ff6) !important;
+  background-image: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/checkmark-s.png"), -moz-linear-gradient(top, #6388f8, #215ff6) !important;
+  background-image: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/checkmark-s.png"), -webkit-gradient(linear, left top, right top, from(#6388f8), to(#215ff6)) !important;
+  background-image: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/checkmark-s.png"), -webkit-linear-gradient(top, #6388f8, #215ff6) !important;
+  background-image: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/checkmark-s.png"), -o-linear-gradient(top, #6388f8, #215ff6) !important;
+  background-image: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/checkmark-s.png"), linear-gradient(top, #6388f8, #215ff6) !important;
 }
 /* @end */
 
