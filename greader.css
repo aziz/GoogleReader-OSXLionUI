@@ -622,20 +622,15 @@ body { padding:0 !important; margin:0 !important;}
   color: #343434 !important;
   text-shadow: 0 1px 0 rgba(255,255,255,.66) !important;
 }
-#viewer-refresh img {
+#viewer-refresh img, #entries-up img, #entries-down img {
   width: 0 !important;
   height: 0 !important;
   padding:14px 0 0 14px !important;
   margin-top: -4px !important;
-  background: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/refresh.png") no-repeat !important;
 }
-#entries-up img {
-  width: 0 !important;
-  height: 0 !important;
-  padding:14px 0 0 14px !important;
-  margin-top: -4px !important;
-  background: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/arrow-up.png") no-repeat !important;  
-}
+#viewer-refresh img { background: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/refresh.png") no-repeat !important; }
+#entries-up img { background: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/arrow-up.png") no-repeat !important; }
+#entries-down img { background: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/arrow-down.png") no-repeat !important; }
 /* @end */
 
 /* @group Viewer */
