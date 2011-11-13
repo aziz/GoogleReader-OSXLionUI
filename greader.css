@@ -84,18 +84,16 @@ body { padding:0 !important; margin:0 !important;}
   background-image: linear-gradient(top, #e8e8e8, #c2c2c2) !important;
   background-position: 0 0 !important;
 }
-
+.gbt { float: right !important; }
 #gbg {
   position: absolute !important;
   left:0 !important;
   right:auto !important;
 }
-
 #top-bar {
   height: 0 !important;
   border-bottom:0px solid transparent !important;
 }
-
 #search {
   padding: 0 !important;
   margin-left: 0 !important;
@@ -105,17 +103,14 @@ body { padding:0 !important; margin:0 !important;}
   z-index: 99999 !important;
   min-width: 100px !important;
 }
-
 #search-input {
   width: 300px !important;
   border-radius: 50px !important;
   -moz-appearance: none !important;
 }
-
 .jfk-textinput:focus {
   border: 1px solid #4d90fe !important;
 }
-
 .jfk-textinput {
   -webkit-border-radius: 50px !important;
   -moz-border-radius: 50px !important;
@@ -134,7 +129,6 @@ body { padding:0 !important; margin:0 !important;}
   -webkit-background-clip: padding-box !important;
   background-clip        : padding-box !important;
 }
-
 .jfk-textinput:focus {
   border:1px solid #6aa1cd !important;
   -webkit-box-shadow: 0 0 4px #6aa1cd, 0 1px 0 #d7d7d7, inset 0 1px 4px rgba(0,0,0,.22) !important;
@@ -142,7 +136,6 @@ body { padding:0 !important; margin:0 !important;}
   -o-box-shadow     : 0 0 4px #6aa1cd, 0 1px 0 #d7d7d7, inset 0 1px 4px rgba(0,0,0,.22) !important;
   box-shadow        : 0 0 4px #6aa1cd, 0 1px 0 #d7d7d7, inset 0 1px 4px rgba(0,0,0,.22) !important;
 }
-
 #search .search-restrict {
   width: 130px !important;
   margin: 0 !important;
@@ -161,16 +154,13 @@ body { padding:0 !important; margin:0 !important;}
   padding: 0 !important;
   color: #666 !important;
 }
-
 #search .search-restrict.goog-flat-menu-button.goog-flat-menu-button-open, #search .search-restrict.goog-flat-menu-button.goog-flat-menu-button-active {
   -webkit-box-shadow: none !important;
   -moz-box-shadow   : none !important;
   -o-box-shadow     : none !important;
   box-shadow        : none !important;
 }
-
 #search-input, #search .search-restrict { float: none !important; }
-
 #search .jfk-button-action {
   background-color: transparent !important;
   background-image: url('https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/search.png') !important;
@@ -180,13 +170,11 @@ body { padding:0 !important; margin:0 !important;}
   height: 13px !important;
   -moz-appearance: none !important;
 }
-
 #search .jfk-button-action img {display: none !important;}
 #search .goog-flat-menu-button-dropdown  {
   top: 9px !important;
   right: 8px !important;
 }
-
 #search .jfk-button {
   -webkit-border-radius: 0 !important;
   -moz-border-radius   : 0 !important;
@@ -203,7 +191,6 @@ body { padding:0 !important; margin:0 !important;}
   top: 2px !important;
   opacity: 1 !important;
 }
-
 #top-bar .goog-flat-menu-button-hover {
   -webkit-box-shadow: none !important;
   -moz-box-shadow   : none !important;
@@ -284,7 +271,9 @@ body { padding:0 !important; margin:0 !important;}
   background: url('https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/arrow-open-s.png') no-repeat !important;
   background-position: 6px 5px !important;
 }
+.scroll-tree li a.menu-open { background-color: transparent !important; }
 .folder .folder .name-text { max-width: 155px !important; }
+.sub .name-text { max-width: 170px !important; }
 #lhn-selectors-minimize, .section-minimized #lhn-selectors-minimize,
 #lhn-recommendations-minimize, .section-minimized #lhn-recommendations-minimize,
 #lhn-subscriptions-minimize, .section-minimized #lhn-subscriptions-minimize { background-position: 0 0 !important; }
@@ -295,9 +284,7 @@ body { padding:0 !important; margin:0 !important;}
   top:11px !important;
 }
 #lhn-subscriptions-minimize {top:9px !important;}
-
 .scroll-tree li a:hover { background-color: transparent !important; }
-
 .lhn-section-secondary li a.tree-link-selected, #overview-selector.selected, #reading-list-selector.selected,
 .lhn-section-secondary .selected, .lhn-section-primary.tree-link-selected {
   background-color: #51a2d9 !important;
@@ -311,7 +298,6 @@ body { padding:0 !important; margin:0 !important;}
   -o-box-shadow     : inset 0 1px 0 #58a5da, inset 0 -1px 0 #2e7bbd, inset 0 2px 0 #6cbae6 !important;
   box-shadow        : inset 0 1px 0 #58a5da, inset 0 -1px 0 #2e7bbd, inset 0 2px 0 #6cbae6 !important;
 }
-
 .scroll-tree li a.tree-link-selected .name,.scroll-tree li a.tree-link-selected .unread-count,
 .scroll-tree li a.tree-link-selected:hover .name,#nav .selected a, #nav .selected a .text,
 #lhn-selectors .selected a span, #lhn-selectors .selected a:hover span, .tree-link-selected #recs-tree-item-0-name {
@@ -328,7 +314,6 @@ body { padding:0 !important; margin:0 !important;}
   top:4px !important;
   right:4px !important;
 }
-
 .scroll-tree .tree-selected > .tree-link-selected > .tree-item-action-container > .section-menubutton {
   background: url('https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/arrow-grear-s.png') no-repeat !important;
   background-position: center right !important;
@@ -340,7 +325,6 @@ body { padding:0 !important; margin:0 !important;}
 .selector:hover, #lhn-selectors .selector:hover {
   background-color: transparent !important;
 }
-
 #directory-selector a {
   padding-left: 24px !important;
   background: transparent url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/browse.png") no-repeat left center !important;
@@ -349,7 +333,6 @@ body { padding:0 !important; margin:0 !important;}
 #directory-selector.selected a {
   background: transparent url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/browse-s.png") no-repeat left center !important;
 }
-
 .lhn-section-primary { line-height: 26px !important; }
 #reading-list-unread-count {
   line-height: 26px !important;
@@ -379,7 +362,6 @@ body { padding:0 !important; margin:0 !important;}
   overflow: visible !important;
   border-bottom: 0 solid transparent !important;
 }
-
 #lhn-add-subscription {
   margin-left: 0 !important;
   margin-top: 0 !important;
@@ -390,7 +372,6 @@ body { padding:0 !important; margin:0 !important;}
   padding:0 3px !important;
   width: 70px !important;
 }
-
 #lhn-add-subscription-section .jfk-button-primary {
   background-color: transparent !important;
   background-image: none !important;
@@ -402,7 +383,6 @@ body { padding:0 !important; margin:0 !important;}
   border-radius        : 0 !important;
   height: 29px !important;
 }
-
 #lhn-add-subscription-section .jfk-button-primary:before {
   content: "" !important;
   background: url('//ssl.gstatic.com/gb/images/h_bedf916a.png') !important;
@@ -438,9 +418,7 @@ body { padding:0 !important; margin:0 !important;}
   margin-top:-1px !important;
   margin-left: -1px !important;
 }
-
 #quick-add-close { background: url('https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/close.png') no-repeat !important; }
-
 /* @end */
 
 /* @group Fullscreen */
@@ -486,7 +464,7 @@ body { padding:0 !important; margin:0 !important;}
 }
 #chrome-lhn-menu .goog-button-base-outer-box {
   border-top: 0 solid transparent !important;
-  border-bottom: 0 solid transparent !important; 
+  border-bottom: 0 solid transparent !important;
 }
 #chrome-lhn-menu .goog-button-base-inner-box {
   background: transparent !important;
@@ -551,7 +529,6 @@ body { padding:0 !important; margin:0 !important;}
   font-weight: 600 !important;
   text-shadow: 0 1px 0px rgba(255,255,255,.75) !important;
 }
-
 #chrome-lhn-menu:active, #chrome-lhn-menu.goog-button-base-open, #viewer-refresh:active, #stream-prefs-menu:active, #viewer-view-options:active, #stream-prefs-menu.goog-button-base-open,
 #viewer-top-controls .jfk-button-narrow:active, #viewer-top-controls .jfk-button-checked, #mark-all-as-read-split-button .jfk-button:active, #mark-all-as-read-split-button .goog-flat-menu-button:active,
 #mark-all-as-read-split-button .goog-flat-menu-button-open {
@@ -566,24 +543,33 @@ body { padding:0 !important; margin:0 !important;}
   box-shadow        : inset 0 1px 0 #a4a4a4, inset 0 -1px 0 #d9d9d9, 0 1px 0 #dbdbdb !important;
 }
 #chrome-lhn-menu {margin-right: 8px !important;}
-#viewer-top-controls .jfk-button-collapse-left, #mark-all-as-read-split-button .goog-flat-menu-button-collapse-left {
-  -webkit-border-radius: 0 4px 4px 0 !important;
-  -moz-border-radius   : 0 4px 4px 0 !important;
-  border-radius        : 0 4px 4px 0 !important;
+.jfk-button-checked {
+  -webkit-border-radius: 4px !important;
+  -moz-border-radius   : 4px !important;
+  border-radius        : 4px !important;
+  -moz-background-clip   : padding !important;
+  -webkit-background-clip: padding-box !important;
+  background-clip        : padding-box !important;
 }
-
+#viewer-top-controls .jfk-button-collapse-left, #mark-all-as-read-split-button .goog-flat-menu-button-collapse-left {
+  border-bottom-left-radius:0 !important;
+  border-top-left-radius:0 !important;
+}
 #viewer-top-controls .jfk-button-collapse-right, #mark-all-as-read-split-button .jfk-button-collapse-right {
-  -webkit-border-radius: 4px 0 0 4px !important;
-  -moz-border-radius   : 4px 0 0 4px !important;
-  border-radius        : 4px 0 0 4px !important;
+  border-bottom-right-radius:0 !important;
+  border-top-right-radius:0 !important;
   margin-right:0 !important;
 }
+#stream-view-options-container .jfk-button[style="-webkit-user-select: none; display: none; "] + div.jfk-button-standard {
+  border-bottom-left-radius:4px !important;
+  border-top-left-radius:4px !important;
+}
+
 #mark-all-as-read-split-button .goog-flat-menu-button-collapse-left { min-width: 8px !important; }
 #viewer-top-controls .goog-button-base-outer-box {
   border-top: 0 solid transparent !important;
   border-bottom: 0 solid transparent !important;
 }
-
 #viewer-top-controls .goog-button-base-inner-box {
   background-color: transparent !important;
   background-image: none !important;
@@ -593,22 +579,18 @@ body { padding:0 !important; margin:0 !important;}
   margin: 0 -1px !important;
   height: 20px !important;
 }
-
 #viewer-top-controls .goog-button-base-content {
   line-height: 20px !important;
   padding: 0 !important;
 }
-
 #viewer-top-controls .goog-menu-button .goog-menu-button-dropdown {
   top: 8px !important;
   right: -3px !important;
 }
-
 #viewer-top-controls .goog-flat-menu-button-dropdown  {
   top: 8px !important;
   right: 6px !important;
 }
-
 #viewer-view-options {
   padding-right: 18px !important;
   margin:0 8px 0 0 !important;
@@ -659,7 +641,7 @@ body { padding:0 !important; margin:0 !important;}
 
 #entries .entry, #entries.list .entry-container { background: transparent !important; }
 .cards .entry {  margin: 0 8px !important;  }
-.entry .card {
+.entry .card, #entries.search .entry .search-result {
   -webkit-border-radius: 4px !important;
   -moz-border-radius   : 4px !important;
   border-radius        : 4px !important;
@@ -690,14 +672,6 @@ body { padding:0 !important; margin:0 !important;}
 .entry .entry-icons { margin-left: 0 !important; }
 #current-entry .card { border-color: #4e73d5 !important }
 .card .card-content { padding: 8px 0 5px !important; }
-.entry .entry-author, .entry-comments .comment-time, .entry .entry-date { color: #aaa !important; }
-.entry-container .entry-title a, .entry-container .entry-body a, .entry-container .entry-title a,
-.entry-container a.entry-source-title,
-.entry-container a.entry-post-author-name,
-.entry-container a.entry-source-title,
-.preview-interruption-back, .preview-interruption a,
-#scroll-filler-recs-message a,
-#overview a, #footer a { color: #08c !important; }
 .entry-title-go-to { background-position: left -411px !important; }
 #chrome-title {
   color:#3f3f3f !important;
@@ -757,6 +731,32 @@ body { padding:0 !important; margin:0 !important;}
   color:#666 !important;
 }
 #no-entries-msg h2 { font-weight: 300 !important; }
+.small-interruption {
+  margin: 0 0 12px 0 !important;
+  background: transparent !important;
+  background-image: -webkit-linear-gradient(top, rgba(0,0,0,.15) 75%, rgba(0,0,0,0)) !important;
+  background-image:    -moz-linear-gradient(top, rgba(0,0,0,.15) 75%, rgba(0,0,0,0)) !important;
+  background-image:      -o-linear-gradient(top, rgba(0,0,0,.15) 75%, rgba(0,0,0,0)) !important;
+  background-image:         linear-gradient(top, rgba(0,0,0,.15) 75%, rgba(0,0,0,0)) !important;
+}
+img[src="/reader/ui/1567066642-down-arrow.png"] {display: none !important;}
+.poptart-interruption {text-shadow: 1px 1px rgba(255,255,255,.5) !important; }
+.poptart-interruption .close-box {
+  background-image: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/close.png") !important;
+  background-repeat: no-repeat !important;
+}
+#entries.search .entry {
+  background: transparent !important;
+  border: 0 solid transparent !important;
+  margin:0 8px !important;
+  padding:5px 0 !important;
+}
+#entries.search .entry .search-result {
+  background-color: #fff !important;
+  border:0 !important;
+  padding:8px 1em !important;
+}
+#entries.search .entry .search-result .entry-title-link {text-decoration: none !important;}
 /* @end */
 
 /* @group Pages-Home */
@@ -780,6 +780,7 @@ body { padding:0 !important; margin:0 !important;}
   -moz-box-shadow   : 0 1px 3px #888 !important;
   -o-box-shadow     : 0 1px 3px #888 !important;
   box-shadow        : 0 1px 3px #888 !important;
+  overflow: hidden !important;
 }
 #recent-activity .recent h4 {
   font-size: 15px !important;
@@ -804,31 +805,68 @@ body { padding:0 !important; margin:0 !important;}
 }
 /* @end */
 
-/* @group Menus */
-/*.goog-menu-vertical {display: block !important;}*/
-.goog-menu { background: rgba(255,255,255,.95) !important; }
-.goog-menuitem { background: transparent !important; }
+/* @group Popup Menus */
+.goog-menu-vertical {display: block !important;}
+.goog-menu {
+  background-color: rgba(255,255,255,.98) !important;
+  -webkit-box-shadow: 0 8px 18px rgba(0,0,0,.3) !important;
+  -moz-box-shadow   : 0 8px 18px rgba(0,0,0,.3) !important;
+  -o-box-shadow     : 0 8px 18px rgba(0,0,0,.3) !important;
+  box-shadow        : 0 8px 18px rgba(0,0,0,.3) !important;
+  -webkit-border-radius: 4px !important;
+  -moz-border-radius   : 4px !important;
+  border-radius        : 4px !important;
+  -moz-background-clip   : padding !important;
+  -webkit-background-clip: padding-box !important;
+  background-clip        : padding-box !important;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+  border:0 !important;
+}
+.goog-menuitem {
+  background: transparent !important;
+  padding: 2px 30px 2px 24px !important;
+  height:19px !important;
+  border-top:0 solid transparent !important;
+  border-bottom:0 solid transparent !important;
+  font-size: 14px !important;
+  line-height: 19px !important;
+}
+.goog-menuseparator {
+  height: 1px !important;
+  background-color: #e3e3e3 !important;
+  margin: 5px 1px !important;
+  border-top: 0 !important;
+}
 .goog-menuitem-highlight .goog-menuitem-content, .goog-menuitem-hover .goog-menuitem-content {
   color: white !important;
-  border: 1px solid transparent !important;
+  border: 0 solid transparent !important;
+  line-height: 19px !important;
 }
-.goog-menuitem-highlight, .goog-menuitem-hover { border: 0 none !important; }
-.goog-menuitem-highlight {
-  background-color: #51a2d9 !important;
-  background-image: -moz-linear-gradient(top, #65b1e1, #3088cd) !important;
-  background-image: -webkit-gradient(linear, left top, right top, from(#65b1e1), to(#3088cd)) !important;
-  background-image: -webkit-linear-gradient(top, #65b1e1, #3088cd) !important;
-  background-image: -o-linear-gradient(top, #65b1e1, #3088cd) !important;
-  background-image: linear-gradient(top, #65b1e1, #3088cd) !important;
-  -webkit-box-shadow: inset 0 1px 0 #58a5da, inset 0 -1px 0 #2e7bbd, inset 0 2px 0 #6cbae6 !important;
-  -moz-box-shadow   : inset 0 1px 0 #58a5da, inset 0 -1px 0 #2e7bbd, inset 0 2px 0 #6cbae6 !important;
-  -o-box-shadow     : inset 0 1px 0 #58a5da, inset 0 -1px 0 #2e7bbd, inset 0 2px 0 #6cbae6 !important;
-  box-shadow        : inset 0 1px 0 #58a5da, inset 0 -1px 0 #2e7bbd, inset 0 2px 0 #6cbae6 !important;
+.goog-menuitem.goog-menuitem-highlight {
+  background-image: -moz-linear-gradient(top, #6388f8, #215ff6) !important;
+  background-image: -webkit-gradient(linear, left top, right top, from(#6388f8), to(#215ff6)) !important;
+  background-image: -webkit-linear-gradient(top, #6388f8, #215ff6) !important;
+  background-image: -o-linear-gradient(top, #6388f8, #215ff6) !important;
+  background-image: linear-gradient(top, #6388f8, #215ff6) !important;
+  -webkit-box-shadow: inset 0 1px 0 #5a80ef, inset 0 -1px 0 #1054ec !important;
+  -moz-box-shadow   : inset 0 1px 0 #5a80ef, inset 0 -1px 0 #1054ec !important;
+  -o-box-shadow     : inset 0 1px 0 #5a80ef, inset 0 -1px 0 #1054ec !important;
+  box-shadow        : inset 0 1px 0 #5a80ef, inset 0 -1px 0 #1054ec !important;
+  line-height: 19px !important;
 }
-.goog-option-selected {
+.goog-menuitem.goog-option-selected {
   background-image: url(//ssl.gstatic.com/ui/v1/menu/checkmark.png) !important;
   background-repeat: no-repeat !important;
   background-position: left center !important;
+}
+
+.goog-menuitem.goog-menuitem-highlight.goog-option-selected {
+  background-image: url(//ssl.gstatic.com/ui/v1/menu/checkmark.png), -moz-linear-gradient(top, #6388f8, #215ff6) !important;
+  background-image: url(//ssl.gstatic.com/ui/v1/menu/checkmark.png), -webkit-gradient(linear, left top, right top, from(#6388f8), to(#215ff6)) !important;
+  background-image: url(//ssl.gstatic.com/ui/v1/menu/checkmark.png), -webkit-linear-gradient(top, #6388f8, #215ff6) !important;
+  background-image: url(//ssl.gstatic.com/ui/v1/menu/checkmark.png), -o-linear-gradient(top, #6388f8, #215ff6) !important;
+  background-image: url(//ssl.gstatic.com/ui/v1/menu/checkmark.png), linear-gradient(top, #6388f8, #215ff6) !important;
 }
 /* @end */
 
@@ -842,6 +880,17 @@ body { padding:0 !important; margin:0 !important;}
   border-radius        : 32px !important;
 }
 ::-webkit-scrollbar-track { border-width: 0 !important; }
+/* @end */
+
+/* @group LINKS */
+.entry .entry-author, .entry-comments .comment-time, .entry .entry-date { color: #aaa !important; }
+.entry-container .entry-title a, .entry-container .entry-body a, .entry-container .entry-title a,
+.entry-container a.entry-source-title,
+.entry-container a.entry-post-author-name,
+.entry-container a.entry-source-title,
+.preview-interruption-back, .preview-interruption a,
+#scroll-filler-recs-message a, .entry-title-link, .entry-source-title
+#overview a, #footer a,#overview-directory-link { color: #08c !important; }
 /* @end */
 
 /* @group AD BLOCKERS  */
@@ -870,4 +919,11 @@ img[src^="http://feedads.g.doubleclick.net/"] { display:none !important; }
 .lhn-hidden #title-and-status-holder { left: 0 !important; }
 .samedir { margin-top: 24px !important; }
 .cards .entry-0 { padding-top: 5px !important; }
+/* @end */
+
+/* @group Reader in Google Apps for your domain  */
+#gbi4 #gbi4m1 {color:#343434 !important;}
+#gbi4 .gbma {color:#666 !important;}
+.gbgt-hvr #gbi4 #gbi4m1 {color:#ccc !important;}
+.gbgt-hvr #gbi4 .gbma {border-top-color:#ccc !important;}
 /* @end */
