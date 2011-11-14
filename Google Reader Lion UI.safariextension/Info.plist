@@ -13,7 +13,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.1</string>
+	<string>1.2</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>Chrome</key>
@@ -24,11 +24,12 @@
 		<dict/>
 		<key>Stylesheets</key>
 		<array>
-			<string>greader.css</string>
+			<string>greader-safari.css</string>
 		</array>
 		<key>Whitelist</key>
 		<array>
 			<string>http://www.google.com/reader/view/*</string>
+			<string>https://www.google.com/reader/view/*</string>
 		</array>
 	</dict>
 	<key>Description</key>
@@ -45,8 +46,6 @@
 			<string>All</string>
 		</dict>
 	</dict>
-	<key>Update Manifest URL</key>
-	<string>http://mariusth.channelwood.org/SafariExtensions/update.plist</string>
 	<key>Website</key>
 	<string>https://github.com/aziz/Google-Reader-Lion-UI</string>
 </dict>
