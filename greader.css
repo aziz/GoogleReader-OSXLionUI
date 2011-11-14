@@ -401,11 +401,11 @@ body { padding:0 !important; margin:0 !important;}
 }
 #directory-selector a {
   padding-left: 24px !important;
-  background: transparent url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/browse.png") no-repeat left center !important;
+  background: transparent url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/browse.png") no-repeat 5px 5px !important;
   margin-left: -2px !important;
 }
 #directory-selector.selected a {
-  background: transparent url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/browse-s.png") no-repeat left center !important;
+  background: transparent url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/browse-s.png") no-repeat 5px 5px !important;
 }
 .lhn-section-primary { line-height: 26px !important; }
 #reading-list-unread-count {
@@ -659,19 +659,17 @@ body { padding:0 !important; margin:0 !important;}
 #viewer-refresh img { background: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/refresh.png") no-repeat !important; }
 #entries-up img { background: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/arrow-up.png") no-repeat !important; }
 #entries-down img { background: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/arrow-down.png") no-repeat !important; }
-img[src="/reader/ui/3538434020-view_options_details.png"] {
+img[src="/reader/ui/3538434020-view_options_details.png"],img[src="/reader/ui/3369744051-view_options_list.png"],img[src="/reader/ui/138769644-magnifying_glass.png"] {
   width: 0 !important;
   height: 0 !important;
   padding:14px 0 0 14px !important;
-  margin-top: -3px !important;
-  background: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/view-expanded.png") no-repeat !important;
+  margin-top: -3px !important;  
 }
-img[src="/reader/ui/3369744051-view_options_list.png"] {
-  width: 0 !important;
-  height: 0 !important;
-  padding:14px 0 0 14px !important;
-  margin-top: -3px !important;
-  background: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/view-list.png") no-repeat !important;
+img[src="/reader/ui/3538434020-view_options_details.png"] { background: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/view-expanded.png") no-repeat !important; }
+img[src="/reader/ui/3369744051-view_options_list.png"] { background: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/view-list.png") no-repeat !important; }
+img[src="/reader/ui/138769644-magnifying_glass.png"] {
+  margin-top: -4px !important;
+  background: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/search-button.png") no-repeat !important;
 }
 .fr-modal-dialog {
   border: 0 solid transparent !important;
