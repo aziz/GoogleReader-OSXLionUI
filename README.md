@@ -1,6 +1,5 @@
 # Google Reader &mdash; Mac OS Lion UI #
-
-A user style for new google reader UI, released in Nov. 2011.
+A user style for new google reader UI that makes you feel right at home.
 
 [![image](https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/screenshot-small.png)](https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/screenshot.png)
 
