@@ -596,7 +596,7 @@ body { padding:0 !important; margin:0 !important;}
   border-top-right-radius:0 !important;
   margin-right:0 !important;
 }
-#stream-view-options-container .jfk-button:not(.jfk-button-checked) + div.jfk-button-standard {
+#stream-view-options-container .jfk-button:not(.jfk-button-checked) + div.jfk-button-collapse-right {
   border-bottom-left-radius:4px !important;
   border-top-left-radius:4px !important;
 }
