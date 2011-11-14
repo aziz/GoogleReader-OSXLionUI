@@ -1,9 +1,8 @@
 /*! Copyright (c) 2011 Allen Bargi.
   twitter: @aziz
   github: http://github.com/aziz/Google-Reader-Lion-UI
-
   Version: 1.2
-  Release Date: 2011-11-13
+  Release Date: 2011-11-14
 */
 
 /* @group Fonts */
@@ -486,6 +485,35 @@ body { padding:0 !important; margin:0 !important;}
 #chrome-lhn-menu.goog-menu-button .goog-menu-button-dropdown { top: 6px !important; right: 3px !important; }
 #sections-header .lhn-nav-button-container { margin: 2px 8px 0 !important; }
 .overview-section-header { padding: 0 1em 0 0 !important; }
+.lhn-nav-button-container #chrome-lhn-menu:not(.hidden):before {
+  content: "" !important;
+  position: absolute !important;
+  display: block !important;
+  top: -40px !important;
+  left: -10px !important;
+  height: 29px !important;
+  z-index: 99999 !important;
+  padding:0 7px 0 5px !important;
+  width: 16px !important;
+  min-width: 16px !important;
+  overflow: hidden !important;
+  text-indent: -999px !important;
+  background: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/subscribe.png") center center no-repeat !important;
+}
+.lhn-nav-button-container #chrome-lhn-menu:not(.hidden):after {
+  content: "" !important;
+  background: url('//ssl.gstatic.com/gb/images/h_bedf916a.png') !important;
+  background-position: -27px -22px !important;
+  padding: 0 !important;
+  width: 1px !important;
+  height: 22px !important;
+  display: block !important;
+  position: absolute !important;
+  left: 17px !important;
+  top: -37px !important;
+  z-index: 999 !important;
+}
+#viewer-top-controls, #viewer-header { overflow: visible !important; }
 /* @end */
 
 /* @group Viewer Header */
@@ -631,6 +659,33 @@ body { padding:0 !important; margin:0 !important;}
 #viewer-refresh img { background: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/refresh.png") no-repeat !important; }
 #entries-up img { background: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/arrow-up.png") no-repeat !important; }
 #entries-down img { background: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/arrow-down.png") no-repeat !important; }
+img[src="/reader/ui/3538434020-view_options_details.png"] {
+  width: 0 !important;
+  height: 0 !important;
+  padding:14px 0 0 14px !important;
+  margin-top: -3px !important;
+  background: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/view-expanded.png") no-repeat !important;
+}
+img[src="/reader/ui/3369744051-view_options_list.png"] {
+  width: 0 !important;
+  height: 0 !important;
+  padding:14px 0 0 14px !important;
+  margin-top: -3px !important;
+  background: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/view-list.png") no-repeat !important;
+}
+.fr-modal-dialog {
+  border: 0 solid transparent !important;
+  -webkit-box-shadow: 0 4px 16px rgba(0,0,0,.2) !important;
+  -moz-box-shadow   : 0 4px 16px rgba(0,0,0,.2) !important;
+  -o-box-shadow     : 0 4px 16px rgba(0,0,0,.2) !important;
+  box-shadow        : 0 4px 16px rgba(0,0,0,.2) !important;
+  z-index: 99999 !important;
+}
+.fr-modal-dialog-bg {
+  background-color: #000 !important;
+  opacity: .7 !important;
+  z-index: 99999 !important;
+}
 /* @end */
 
 /* @group Viewer */
@@ -696,12 +751,6 @@ body { padding:0 !important; margin:0 !important;}
 }
 #sections-holder { padding-right: 0 !important; }
 .preview-interruption, #team-messages {
-  -webkit-border-radius: 5px !important;
-  -moz-border-radius   : 5px !important;
-  border-radius        : 5px !important;
-  -moz-background-clip   : padding !important;
-  -webkit-background-clip: padding-box !important;
-  background-clip        : padding-box !important;
   background-color: rgba(249, 237, 190,.88) !important;
   -webkit-box-shadow: 0 1px 3px #888 !important;
   -moz-box-shadow   : 0 1px 3px #888 !important;
@@ -712,6 +761,7 @@ body { padding:0 !important; margin:0 !important;}
   background-image: -webkit-linear-gradient(top, #fcf6d2, #faeaba);
   background-image: -o-linear-gradient(top, #fcf6d2, #faeaba);
   background-image: linear-gradient(top, #fcf6d2, #faeaba);
+  margin:-1px 0 5px 0 !important;
 }
 .preview-interruption-related-streams {
   background: transparent !important;
