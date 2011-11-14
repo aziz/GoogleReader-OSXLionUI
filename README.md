@@ -26,7 +26,7 @@ I spend a considerable amount of time everyday on Google Reader. In fact, for me
 > ![Safari](https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/safari.png)
 > ### Safari
 > 
-> ![Safariextz](https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/safariextz.png)[Install this safari extenstion](#)
+> ![Safariextz](https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/safariextz.png)[Install this safari extenstion](https://github.com/aziz/Google-Reader-Lion-UI/raw/master/Google%20Reader%20Lion%20UI.safariextz)
 
 ## Contributing
 
