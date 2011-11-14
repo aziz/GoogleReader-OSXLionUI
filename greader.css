@@ -596,11 +596,10 @@ body { padding:0 !important; margin:0 !important;}
   border-top-right-radius:0 !important;
   margin-right:0 !important;
 }
-#stream-view-options-container .jfk-button[style="-webkit-user-select: none; display: none; "] + div.jfk-button-standard {
+#stream-view-options-container .jfk-button:not(.jfk-button-checked) + div.jfk-button-standard {
   border-bottom-left-radius:4px !important;
   border-top-left-radius:4px !important;
 }
-
 #mark-all-as-read-split-button .goog-flat-menu-button-collapse-left { min-width: 8px !important; }
 #viewer-top-controls .goog-button-base-outer-box {
   border-top: 0 solid transparent !important;

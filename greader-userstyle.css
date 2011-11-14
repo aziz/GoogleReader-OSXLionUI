@@ -147,7 +147,7 @@ body{padding:0 !important;margin:0 !important;}
 .jfk-button-checked{-webkit-border-radius:4px !important;-moz-border-radius :4px !important;border-radius :4px !important;-moz-background-clip :padding !important;-webkit-background-clip:padding-box !important;background-clip :padding-box !important;}
 #viewer-top-controls .jfk-button-collapse-left,#mark-all-as-read-split-button .goog-flat-menu-button-collapse-left{border-bottom-left-radius:0 !important;border-top-left-radius:0 !important;}
 #viewer-top-controls .jfk-button-collapse-right,#mark-all-as-read-split-button .jfk-button-collapse-right{border-bottom-right-radius:0 !important;border-top-right-radius:0 !important;margin-right:0 !important;}
-#stream-view-options-container .jfk-button[style="-webkit-user-select: none; display: none; "] + div.jfk-button-standard{border-bottom-left-radius:4px !important;border-top-left-radius:4px !important;}
+#stream-view-options-container .jfk-button:not(.jfk-button-checked) + div.jfk-button-standard{border-bottom-left-radius:4px !important;border-top-left-radius:4px !important;}
 #mark-all-as-read-split-button .goog-flat-menu-button-collapse-left{min-width:8px !important;}
 #viewer-top-controls .goog-button-base-outer-box{border-top:0 solid transparent !important;border-bottom:0 solid transparent !important;}
 #viewer-top-controls .goog-button-base-inner-box{background-color:transparent !important;background-image:none !important;background:transparent !important;border-left:0 solid transparent !important;border-right:0 solid transparent !important;margin:0 -1px !important;height:20px !important;}
