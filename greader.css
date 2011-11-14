@@ -242,8 +242,8 @@ body { padding:0 !important; margin:0 !important;}
 }
 #lhn-add-subscription-section .jfk-button-primary:after {
   content: "" !important;
-  background: url('//ssl.gstatic.com/gb/images/h_bedf916a.png') !important;
-  background-position: -27px -22px !important;
+  background: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/line.png") !important;
+  background-position: 0 0 !important;
   border: 0 !important;
   font-size: 0 !important;
   padding: 29px 0 0 !important;
@@ -502,8 +502,8 @@ body { padding:0 !important; margin:0 !important;}
 }
 .lhn-nav-button-container #chrome-lhn-menu:not(.hidden):after {
   content: "" !important;
-  background: url('//ssl.gstatic.com/gb/images/h_bedf916a.png') !important;
-  background-position: -27px -22px !important;
+  background: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/line.png") !important;
+  background-position: 0 0 !important;
   padding: 0 !important;
   width: 1px !important;
   height: 22px !important;
@@ -920,7 +920,7 @@ img[src="/reader/ui/1567066642-down-arrow.png"] {display: none !important;}
   line-height: 19px !important;
 }
 .goog-menuitem.goog-option-selected {
-  background-image: url(//ssl.gstatic.com/ui/v1/menu/checkmark.png) !important;
+  background-image: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/checkmark.png") !important;
   background-repeat: no-repeat !important;
   background-position: left center !important;
 }
