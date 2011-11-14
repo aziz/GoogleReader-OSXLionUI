@@ -9,24 +9,24 @@ I spend a considerable amount of time everyday on Google Reader. In fact, for me
 
 ## Installation ##
 
-> ![Chrome](images/chrome.png)
+> ![Chrome](https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/chrome.png)
 > ### Chrome
-> 1. Install stylish addon
+> 1. [Install stylish addon from chrome web store](https://chrome.google.com/webstore/detail/fjnbnpbmkenffdnngjfgmeleoegfcffe)
 > 2. [Install this user style from the userstyles.org website](http://bit.ly/greader-lion-ui)
 > 
 > ------
 > 
-> ![Firefox](images/firefox.png)
+> ![Firefox](https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/firefox.png)
 > ### Firefox
-> 1. Install stylish addon
+> 1. [Install stylish extension from Firefox addons](https://addons.mozilla.org/en-US/firefox/addon/stylish/)
 > 2. [Install this user style from the userstyles.org website](http://bit.ly/greader-lion-ui)
 > 
 > -----
 > 
-> ![Safari](images/safari.png)
+> ![Safari](https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/safari.png)
 > ### Safari
 > 
-> ![Safariextz](images/safariextz.png)[Install this safari extenstion](http://bit.ly/greader-lion-ui)
+> ![Safariextz](https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/safariextz.png)[Install this safari extenstion](#)
 
 ## Contributing
 
