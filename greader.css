@@ -536,7 +536,8 @@ body { padding:0 !important; margin:0 !important;}
 #viewer-top-controls { padding: 3px 0 0 8px !important; }
 #viewer-top-controls .jfk-button { margin-right: 8px !important; }
 #chrome-lhn-menu, #viewer-refresh, #stream-prefs-menu, #viewer-view-options, .jfk-button-narrow,
-#mark-all-as-read-split-button .jfk-button, #mark-all-as-read-split-button .goog-flat-menu-button {
+#mark-all-as-read-split-button .jfk-button, #mark-all-as-read-split-button .goog-flat-menu-button,
+#settings-button-container .goog-flat-menu-button {
   background-color: #dedede !important;
   background-image: -moz-linear-gradient(top, #f2f2f2, #d0d0d0) !important;
   background-image: -webkit-gradient(linear, left top, right top, from(#f2f2f2), to(#d0d0d0)) !important;
@@ -567,7 +568,7 @@ body { padding:0 !important; margin:0 !important;}
 }
 #chrome-lhn-menu:active, #chrome-lhn-menu.goog-button-base-open, #viewer-refresh:active, #stream-prefs-menu:active, #viewer-view-options:active, #stream-prefs-menu.goog-button-base-open,
 #viewer-top-controls .jfk-button-narrow:active, #viewer-top-controls .jfk-button-checked, #mark-all-as-read-split-button .jfk-button:active, #mark-all-as-read-split-button .goog-flat-menu-button:active,
-#mark-all-as-read-split-button .goog-flat-menu-button-open {
+#mark-all-as-read-split-button .goog-flat-menu-button-open, #settings-button-container .goog-flat-menu-button-open {
   background-image: -moz-linear-gradient(top, #b4b4b4, #dedede) !important;
   background-image: -webkit-gradient(linear, left top, right top, from(#b4b4b4), to(#dedede)) !important;
   background-image: -webkit-linear-gradient(top, #b4b4b4, #dedede) !important;
@@ -601,6 +602,7 @@ body { padding:0 !important; margin:0 !important;}
   border-top-left-radius:4px !important;
 }
 #mark-all-as-read-split-button .goog-flat-menu-button-collapse-left { min-width: 8px !important; }
+#settings-button-container .goog-flat-menu-button { padding-right:18px !important; }
 #viewer-top-controls .goog-button-base-outer-box {
   border-top: 0 solid transparent !important;
   border-bottom: 0 solid transparent !important;
@@ -658,11 +660,17 @@ body { padding:0 !important; margin:0 !important;}
 #viewer-refresh img { background: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/refresh.png") no-repeat !important; }
 #entries-up img { background: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/arrow-up.png") no-repeat !important; }
 #entries-down img { background: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/arrow-down.png") no-repeat !important; }
-img[src="/reader/ui/3538434020-view_options_details.png"],img[src="/reader/ui/3369744051-view_options_list.png"],img[src="/reader/ui/138769644-magnifying_glass.png"] {
+img[src="/reader/ui/3538434020-view_options_details.png"],img[src="/reader/ui/3369744051-view_options_list.png"],
+img[src="/reader/ui/138769644-magnifying_glass.png"], img[src="/reader/ui/345992534-settings.png"] {
   width: 0 !important;
   height: 0 !important;
   padding:14px 0 0 14px !important;
   margin-top: -3px !important;  
+}
+img[src="/reader/ui/345992534-settings.png"] { 
+  background: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/settings.png") no-repeat !important; 
+  position: relative !important;
+  top:-1px !important;
 }
 img[src="/reader/ui/3538434020-view_options_details.png"] { background: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/view-expanded.png") no-repeat !important; }
 img[src="/reader/ui/3369744051-view_options_list.png"] { background: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/view-list.png") no-repeat !important; }
@@ -683,6 +691,8 @@ img[src="/reader/ui/138769644-magnifying_glass.png"] {
   opacity: .7 !important;
   z-index: 99999 !important;
 }
+#item-up-down-buttons { margin-right: 0px !important; }
+.goog-menuheader { color: #888 !important; }
 /* @end */
 
 /* @group Viewer */
@@ -821,6 +831,7 @@ img[src="/reader/ui/1567066642-down-arrow.png"] {display: none !important;}
   padding:8px 1em !important;
 }
 #entries.search .entry .search-result .entry-title-link {text-decoration: none !important;}
+.cards .entry-0 { padding-top: 5px !important; }
 /* @end */
 
 /* @group Pages-Home */
@@ -975,18 +986,6 @@ img[src^="http://feedads.g.doubleclick.net/"] { display:none !important; }
 .gr_add_checked {
   background-image: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/ril-s.png") !important;
 }
-/* @end */
-
-/* @group EXPERIMENTAL */
-#title-and-status-holder {
-  position: fixed !important;
-  right: 0 !important;
-  left: 264px !important;
-  z-index: 9 !important;
-}
-.lhn-hidden #title-and-status-holder { left: 0 !important; }
-.samedir { margin-top: 24px !important; }
-.cards .entry-0 { padding-top: 5px !important; }
 /* @end */
 
 /* @group Reader in Google Apps for your domain  */
