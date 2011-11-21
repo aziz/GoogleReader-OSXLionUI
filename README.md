@@ -34,6 +34,12 @@ Feel free to fork this repo and add your changes. make sure to make a pull reque
 [See the full list of contributors](https://github.com/aziz/Google-Reader-Lion-UI/contributors)
 
 ## History ##
+
+#### 1.3 
+* Added style for the new settings button
+* Fixed scrolling issues
+* More whilelist URLs for Safari extension (courtesy of [Vidal van Bergen](https://github.com/vidalvanbergen))
+
 #### 1.2
 * Restyled the top bar
 * Added support for google reader in google apps service
