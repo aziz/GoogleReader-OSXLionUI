@@ -13,7 +13,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.2</string>
+	<string>1.3</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>Chrome</key>
@@ -30,6 +30,54 @@
 		<array>
 			<string>http://www.google.com/reader/view/*</string>
 			<string>https://www.google.com/reader/view/*</string>
+			<string>http://*.google.com/reader/view*</string>
+			<string>https://*.google.com/reader/view*</string>
+			<string>http://*.google.it/reader/view*</string>
+			<string>https://*.google.it/reader/view*</string>
+			<string>http://*.google.ca/reader/view*</string>
+			<string>https://*.google.ca/reader/view*</string>
+			<string>http://*.google.fr/reader/view*</string>
+			<string>https://*.google.fr/reader/view*</string>
+			<string>http://*.google.co.uk/reader/view*</string>
+			<string>https://*.google.co.uk/reader/view*</string>
+			<string>http://*.google.nl/reader/view*</string>
+			<string>https://*.google.nl/reader/view*</string>
+			<string>http://*.google.pl/reader/view*</string>
+			<string>https://*.google.pl/reader/view*</string>
+			<string>http://*.google.co.jp/reader/view*</string>
+			<string>https://*.google.co.jp/reader/view*</string>
+			<string>http://*.google.de/reader/view*</string>
+			<string>https://*.google.de/reader/view*</string>
+			<string>http://*.google.se/reader/view*</string>
+			<string>https://*.google.se/reader/view*</string>
+			<string>http://*.google.be/reader/view*</string>
+			<string>https://*.google.be/reader/view*</string>
+			<string>http://*.google.com.au/reader/view*</string>
+			<string>https://*.google.com.au/reader/view*</string>
+			<string>http://*.google.dk/reader/view*</string>
+			<string>https://*.google.dk/reader/view*</string>
+			<string>http://*.google.es/reader/view*</string>
+			<string>https://*.google.es/reader/view*</string>
+			<string>http://*.google.co.kr/reader/view*</string>
+			<string>https://*.google.co.kr/reader/view*</string>
+			<string>http://*.google.com.tw/reader/view*</string>
+			<string>https://*.google.com.tw/reader/view*</string>
+			<string>http://*.google.com.mx/reader/view*</string>
+			<string>https://*.google.com.mx/reader/view*</string>
+			<string>http://*.google.ru/reader/view*</string>
+			<string>https://*.google.ru/reader/view*</string>
+			<string>http://*.google.hu/reader/view*</string>
+			<string>https://*.google.hu/reader/view*</string>
+			<string>http://*.google.co.nz/reader/view*</string>
+			<string>https://*.google.co.nz/reader/view*</string>
+			<string>http://*.google.ch/reader/view*</string>
+			<string>https://*.google.ch/reader/view*</string>
+			<string>http://*.google.ie/reader/view*</string>
+			<string>https://*.google.ie/reader/view*</string>
+			<string>http://*.google.com.br/reader/view*</string>
+			<string>https://*.google.com.br/reader/view*</string>
+			<string>http://*.google.at/reader/view*</string>
+			<string>https://*.google.at/reader/view*</string>
 		</array>
 	</dict>
 	<key>Description</key>
