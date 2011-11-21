@@ -189,6 +189,7 @@ img[src="/reader/ui/138769644-magnifying_glass.png"]{margin-top:-4px !important;
 #entries.list #current-entry.expanded .entry-actions .item-star{position:relative !important;left:7px !important;top:1px !important;}
 .entry .entry-icons .item-star{position:relative !important;left:2px !important;top:1px !important;}
 .entry .entry-icons{margin-left:0 !important;}
+.entry .entry-body, .entry .entry-title, .entry .entry-likers{max-width: none !important;}
 #current-entry .card{border-color:#4e73d5 !important}
 .card .card-content{padding:8px 0 5px !important;}
 .entry-title-go-to{background-position:left -411px !important;}
