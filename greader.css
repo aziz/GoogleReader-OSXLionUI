@@ -73,139 +73,57 @@ body { padding:0 !important; margin:0 !important;}
 /* @end */
 
 /* @group Topbar */
-#gbx3, #gbx4 {
-  background-color: #d2d2d2 !important;
-  border-bottom: 1px solid #989898 !important;
-  background-image: -moz-linear-gradient(top, #e8e8e8, #c2c2c2) !important;
-  background-image: -webkit-gradient(linear, left top, right top, from(#e8e8e8), to(#c2c2c2)) !important;
-  background-image: -webkit-linear-gradient(top, #e8e8e8, #c2c2c2) !important;
-  background-image: -o-linear-gradient(top, #e8e8e8, #c2c2c2) !important;
-  background-image: linear-gradient(top, #e8e8e8, #c2c2c2) !important;
-  background-position: 0 0 !important;
+#nav #logo-section {display: none !important;}
+
+#gb {
+  font-family: "open sans", "lucida grande", "sans-serif" !important;
+  background-color:#d2d2d2 !important;
+  border-bottom:1px solid #989898 !important;
+  background-image:-moz-linear-gradient(top,#e8e8e8,#c2c2c2) !important;
+  background-image:-webkit-gradient(linear,left top,right top,from(#e8e8e8),to(#c2c2c2)) !important;
+  background-image:-webkit-linear-gradient(top,#e8e8e8,#c2c2c2) !important;
+  background-image:-o-linear-gradient(top,#e8e8e8,#c2c2c2) !important;
+  background-image:linear-gradient(top,#e8e8e8,#c2c2c2) !important;
+  background-position:0 0 !important;
+  height:36px !important;
 }
-.gbt { float: right !important; }
-#gbg {
-  position: absolute !important;
-  left:28px !important;
-  right:auto !important;
+#gbx1, #gbx2 {
+  background: transparent !important;
+  background: none !important;
+  border-bottom: 0 solid transparent !important;
+  height: 36px !important;
 }
-#top-bar {
-  height: 0 !important;
-  border-bottom:0px solid transparent !important;
+.gbes#gbx1, .gbes#gbx2, .gbes#gbqlw, .gbesi#gb #gbx1, .gbesi#gb #gbx2, .gbesi#gb #gbqlw { height: 36px !important; }
+.gbes#gbmail, .gbesi#gb #gbmail { top: 16px !important; }
+.gbes#gbv, .gbes#gbn, .gbes#gbq2, .gbes#gbq3, .gbesi#gb #gbv, 
+.gbesi#gb #gbn, .gbesi#gb #gbq2, .gbesi#gb #gbq3 { 
+  padding-top: 4px !important;
+  padding-bottom: 0 !important; 
 }
-#search {
-  padding: 0 !important;
-  margin-left: 0 !important;
-  position: absolute !important;
-  right: 4px !important;
-  top: -26px !important;
-  z-index: 99999 !important;
-  min-width: 100px !important;
+.gbes#gbv, .gbesi#gb #gbv { margin-right: 24px !important; }
+#gbql {
+  background-position: -37px -150px !important;
+  height: 27px !important;
+  width: 71px !important;
 }
-#search-input {
-  width: 300px !important;
-  border-radius: 50px !important;
-  -moz-appearance: none !important;
+#gbqlw { height: 36px !important; }
+#gbq2 {
+  margin-left: 272px !important;
+  padding-top: 4px !important;
 }
-.jfk-textinput:focus {
-  border: 1px solid #4d90fe !important;
+#gbv {
+  margin-right: 24px !important;
+  padding-bottom: 0 !important;
+  padding-top: 4px !important;
 }
-.jfk-textinput {
-  -webkit-border-radius: 50px !important;
-  -moz-border-radius: 50px !important;
-  border-radius: 50px !important;
-  border: 1px solid #a4a4a4 !important;
-  border-top: 1px solid #8f8f8f !important;
-  border-bottom: 1px solid #b6b6b6 !important;
-  font-size: 12px !important;
-  height: 18px !important;
-  padding: 1px 8px 1px 20px !important;
-  -webkit-box-shadow: 0 1px 0 #d7d7d7, inset 0 1px 4px rgba(0,0,0,.22) !important;
-  -moz-box-shadow   : 0 1px 0 #d7d7d7, inset 0 1px 4px rgba(0,0,0,.22) !important;
-  -o-box-shadow     : 0 1px 0 #d7d7d7, inset 0 1px 4px rgba(0,0,0,.22) !important;
-  box-shadow        : 0 1px 0 #d7d7d7, inset 0 1px 4px rgba(0,0,0,.22) !important;
-  -moz-background-clip   : padding !important;
-  -webkit-background-clip: padding-box !important;
-  background-clip        : padding-box !important;
-}
-.jfk-textinput:focus {
-  border:1px solid #6aa1cd !important;
-  -webkit-box-shadow: 0 0 4px #6aa1cd, 0 1px 0 #d7d7d7, inset 0 1px 4px rgba(0,0,0,.22) !important;
-  -moz-box-shadow   : 0 0 4px #6aa1cd, 0 1px 0 #d7d7d7, inset 0 1px 4px rgba(0,0,0,.22) !important;
-  -o-box-shadow     : 0 0 4px #6aa1cd, 0 1px 0 #d7d7d7, inset 0 1px 4px rgba(0,0,0,.22) !important;
-  box-shadow        : 0 0 4px #6aa1cd, 0 1px 0 #d7d7d7, inset 0 1px 4px rgba(0,0,0,.22) !important;
-}
-#search .search-restrict {
-  width: 130px !important;
-  margin: 0 !important;
-  -webkit-border-radius: 0 !important;
-  -moz-border-radius   : 0 !important;
-  border-radius        : 0 !important;
-  background-color: transparent !important;
-  background-image: none !important;
-  border: 0 solid transparent !important;
-  border-left: 1px dotted #ccc !important;
-  position: absolute !important;
-  right: 0 !important;
-  height: 20px !important;
-  line-height: 21px !important;
-  top: 1px !important;
-  padding: 0 !important;
-  color: #666 !important;
-}
-#search .search-restrict.goog-flat-menu-button.goog-flat-menu-button-open, #search .search-restrict.goog-flat-menu-button.goog-flat-menu-button-active {
-  -webkit-box-shadow: none !important;
-  -moz-box-shadow   : none !important;
-  -o-box-shadow     : none !important;
-  box-shadow        : none !important;
-}
-#search-input, #search .search-restrict { float: none !important; }
-#search .jfk-button-action {
-  background-color: transparent !important;
-  background-image: url('https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/search.png') !important;
-  border: 0 solid transparent !important;
-  color: transparent !important;
-  width: 13px !important;
-  height: 13px !important;
-  -moz-appearance: none !important;
-}
-#search .jfk-button-action img {display: none !important;}
-#search .goog-flat-menu-button-dropdown  {
-  top: 9px !important;
-  right: 8px !important;
-}
-#search .jfk-button {
-  -webkit-border-radius: 0 !important;
-  -moz-border-radius   : 0 !important;
-  border-radius        : 0 !important;
-  margin-right: 0 !important;
-  height: 18px !important;
-  line-height: 18px !important;
-  min-width: 18px !important;
-  padding: 0 !important;
-  background-repeat: no-repeat !important;
-  background-position: center center !important;
-  position: absolute !important;
-  left: 3px !important;
+.gbmab, .gbmac { top: -12px !important; }
+#gbd4, #gbd3, #gbd2, #gbd1 { top:38px !important;}
+#gbwc { top:48px !important;}
+#gbq1 .gbmai { top: 16px !important; }
+#gbq1 {
+  margin-left: 16px !important;
   top: 2px !important;
-  opacity: 1 !important;
 }
-#top-bar .goog-flat-menu-button-hover {
-  -webkit-box-shadow: none !important;
-  -moz-box-shadow   : none !important;
-  -o-box-shadow     : none !important;
-  box-shadow        : none !important;
-}
-#top-bar .goog-button-base-inner-box {
-  border-left: 0px solid transparent !important;
-  border-right: 0px solid transparent !important;
-}
-.message-area-container {
-  left:264px !important;
-  z-index: 999999 !important;
-}
-#gbi5, .gbto .gbgt-hvr #gbi5 { background: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/gear.png") no-repeat !important; }
-.gbgt-hvr #gbi5 { background: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/gear-s.png") no-repeat !important; }
 /* @end */
 
 /* @group Add Subscription button */
@@ -220,8 +138,8 @@ body { padding:0 !important; margin:0 !important;}
   margin-left: 0 !important;
   margin-top: 0 !important;
   position: absolute !important;
-  top:-30px !important;
-  left:0px !important;
+  top: -33px !important;
+  left: 236px !important;
   z-index: 99999 !important;
   padding:0 7px 0 5px !important;
   width: 16px !important;
@@ -422,13 +340,19 @@ body { padding:0 !important; margin:0 !important;}
 #recommendations-tree .folder .link .sub-icon {
   background: url('https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/feed.png') 2px 2px no-repeat !important;
 }
-#recommendations-tree-view-all {padding-left: 40px !important;}
+#recommendations-tree-view-all {padding-left: 52px !important;}
 #scrollable-sections-bottom-shadow { border-bottom: 0px solid transparent !important; }
 #scrollable-sections-top-shadow { border-top: 0px solid transparent !important; }
 #sub-tree {padding-bottom: 24px !important;}
+#nav, #logo-container, #lhn-add-subscription-section, #scrollable-sections-top-shadow, #scrollable-sections-bottom-shadow {
+  width: 264px !important;
+}
+#chrome { margin-left: 264px !important; }
+#lhn-selectors.section-minimized .selectors-footer {display: none !important;}
 /* @end */
 
 /* @group Fullscreen */
+.fullscreen #chrome, .lhn-hidden #chrome { margin-left: 0 !important; }
 .fullscreen #chrome-fullscreen-top-toggle {
   background-image: -moz-linear-gradient(top, #d8d8d8, #cacaca) !important;
   background-image: -webkit-gradient(linear, left top, right top, from(#d8d8d8), to(#cacaca)) !important;
@@ -537,7 +461,7 @@ body { padding:0 !important; margin:0 !important;}
 #viewer-top-controls .jfk-button { margin-right: 8px !important; }
 #chrome-lhn-menu, #viewer-refresh, #stream-prefs-menu, #viewer-view-options, .jfk-button-narrow,
 #mark-all-as-read-split-button .jfk-button, #mark-all-as-read-split-button .goog-flat-menu-button,
-#settings-button-container .goog-flat-menu-button {
+#settings-button-container .goog-flat-menu-button, .settings-button-container .goog-flat-menu-button  {
   background-color: #dedede !important;
   background-image: -moz-linear-gradient(top, #f2f2f2, #d0d0d0) !important;
   background-image: -webkit-gradient(linear, left top, right top, from(#f2f2f2), to(#d0d0d0)) !important;
@@ -568,7 +492,7 @@ body { padding:0 !important; margin:0 !important;}
 }
 #chrome-lhn-menu:active, #chrome-lhn-menu.goog-button-base-open, #viewer-refresh:active, #stream-prefs-menu:active, #viewer-view-options:active, #stream-prefs-menu.goog-button-base-open,
 #viewer-top-controls .jfk-button-narrow:active, #viewer-top-controls .jfk-button-checked, #mark-all-as-read-split-button .jfk-button:active, #mark-all-as-read-split-button .goog-flat-menu-button:active,
-#mark-all-as-read-split-button .goog-flat-menu-button-open, #settings-button-container .goog-flat-menu-button-open {
+#mark-all-as-read-split-button .goog-flat-menu-button-open, #settings-button-container .goog-flat-menu-button-open, .settings-button-container .goog-flat-menu-button-open {
   background-image: -moz-linear-gradient(top, #b4b4b4, #dedede) !important;
   background-image: -webkit-gradient(linear, left top, right top, from(#b4b4b4), to(#dedede)) !important;
   background-image: -webkit-linear-gradient(top, #b4b4b4, #dedede) !important;
@@ -602,7 +526,7 @@ body { padding:0 !important; margin:0 !important;}
   border-top-left-radius:4px !important;
 }
 #mark-all-as-read-split-button .goog-flat-menu-button-collapse-left { min-width: 8px !important; }
-#settings-button-container .goog-flat-menu-button { padding-right:18px !important; }
+#settings-button-container .goog-flat-menu-button, .settings-button-container .goog-flat-menu-button { padding-right:18px !important; }
 #viewer-top-controls .goog-button-base-outer-box {
   border-top: 0 solid transparent !important;
   border-bottom: 0 solid transparent !important;
@@ -831,7 +755,7 @@ img[src="/reader/ui/1567066642-down-arrow.png"] {display: none !important;}
   padding:8px 1em !important;
 }
 #entries.search .entry .search-result .entry-title-link {text-decoration: none !important;}
-.cards .entry-0 { padding-top: 5px !important; }
+.cards .entry { margin:6px 6px 6px 1px !important; }
 /* @end */
 
 /* @group Pages-Home */
