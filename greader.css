@@ -1,8 +1,8 @@
 /*! Copyright (c) 2011 Allen Bargi.
   twitter: @aziz
   github: http://github.com/aziz/Google-Reader-Lion-UI
-  Version: 1.3
-  Release Date: 2011-11-21
+  Version: 1.4
+  Release Date: 2011-12-10
 */
 
 /* @group Fonts */
@@ -52,7 +52,7 @@
 
 /* @group Layout Fixes */
 * { font-family: "open sans", "lucida grande", "sans-serif" !important; }
-#gbz, #logo-container, #gbg6 { display:none !important; }
+#logo-container, #gbg6 { display:none !important; }
 .card .card-bottom {border:0 !important;}
 .card-common .card-actions {background-color:transparent !important;}
 body { padding:0 !important; margin:0 !important;}
@@ -102,7 +102,8 @@ body { padding:0 !important; margin:0 !important;}
 }
 .gbes#gbv, .gbesi#gb #gbv { margin-right: 24px !important; }
 #gbql {
-  background-position: -37px -150px !important;
+  background-position: 0 0 !important;
+  background-image: url('https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/logo.png');
   height: 27px !important;
   width: 71px !important;
 }
@@ -111,7 +112,7 @@ body { padding:0 !important; margin:0 !important;}
   margin-left: 272px !important;
   padding-top: 4px !important;
 }
-#gbv {
+#gbv,#gbu {
   margin-right: 24px !important;
   padding-bottom: 0 !important;
   padding-top: 4px !important;
@@ -123,6 +124,83 @@ body { padding:0 !important; margin:0 !important;}
 #gbq1 {
   margin-left: 16px !important;
   top: 2px !important;
+}
+#gbqfbw {
+  left: 6px !important;
+  right: auto !important;
+  top: 7px !important;
+  margin: 0 !important;
+  height: 14px !important;
+}
+.gbqfqwb { padding:0 20px !important; }
+.gbqfb {
+background-color: transparent !important;
+background-image: none !important;
+border: 0 solid transparent !important;
+padding: 0 !important;
+height: 14px !important;
+min-width: 14px !important;
+width: 14px !important;
+-webkit-box-shadow: none !important;
+-moz-box-shadow   : none !important;
+-o-box-shadow     : none !important;
+box-shadow        : none !important;
+}
+#gbqfi {
+background: url('https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/search-button.png') !important;
+background-position: 0 0 !important;
+height: 14px !important;
+margin: 0 !important;
+width: 14px !important;
+opacity   : 0.7;
+}
+
+#gbqfq { 
+  height:25px !important;
+  font-size: 14px !important;
+  margin-top:0 !important;
+}
+#gbqfqw {
+  -webkit-border-radius:50px !important;
+  -moz-border-radius:50px !important;
+  border-radius:50px !important;
+  border:1px solid #a4a4a4 !important;
+  border-top:1px solid #8f8f8f !important;
+  border-bottom:1px solid #b6b6b6 !important;
+  font-size:12px !important;
+  height:26px !important;
+  padding:0 8px 0 20px !important;
+  -webkit-box-shadow:0 1px 0 #d7d7d7,inset 0 1px 4px rgba(0,0,0,.22) !important;
+  -moz-box-shadow :0 1px 0 #d7d7d7,inset 0 1px 4px rgba(0,0,0,.22) !important;
+  -o-box-shadow :0 1px 0 #d7d7d7,inset 0 1px 4px rgba(0,0,0,.22) !important;
+  box-shadow :0 1px 0 #d7d7d7,inset 0 1px 4px rgba(0,0,0,.22) !important;
+  -moz-background-clip: padding !important;
+  -webkit-background-clip: padding-box !important;
+  background-clip: padding-box !important;
+}
+.search-restrict {
+  position: relative !important;
+  right: -3px !important;
+}
+
+#gbz {
+  z-index:999999 !important;
+/*
+  display: block !important;
+  visibility: visible !important;
+  overflow-x:visible !important;
+  overflow-y:visible !important;
+  opacity: 1 !important;
+*/
+  top:40px !important;
+  left:-12px !important;
+  margin-left:0 !important;
+  margin:0 !important;
+}
+.gbesi #gbq1 .gbmab, .gbes #gbq1 .gbmab, .gbesi #gbq1 .gbmac, .gbes #gbq1 .gbmac {
+  margin: 0 !important;
+  top: 28px !important;
+  left: 15px !important;
 }
 /* @end */
 
@@ -147,6 +225,7 @@ body { padding:0 !important; margin:0 !important;}
   overflow: hidden !important;
   text-indent: -999px !important;
   background: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/subscribe.png") center center no-repeat !important;
+  opacity:.7;
 }
 #lhn-add-subscription-section .jfk-button-primary {
   background-color: transparent !important;
@@ -449,11 +528,11 @@ body { padding:0 !important; margin:0 !important;}
   background-image: linear-gradient(top, #d8d8d8, #cacaca) !important;
   height: 38px !important;
   margin-right: 0 !important;
-  border-bottom: 1px solid #797979 !important;
-  -webkit-box-shadow: inset 0 -1px 0 #cfcece, inset 0 1px 0 #f0f0f0 !important;
-  -moz-box-shadow   : inset 0 -1px 0 #cfcece, inset 0 1px 0 #f0f0f0 !important;
-  -o-box-shadow     : inset 0 -1px 0 #cfcece, inset 0 1px 0 #f0f0f0 !important;
-  box-shadow        : inset 0 -1px 0 #cfcece, inset 0 1px 0 #f0f0f0 !important;
+  border-bottom: 1px solid #989898 !important;
+  -webkit-box-shadow: inset 0 -1px 0 #cfcece, inset 0 1px 0 #f0f0f0, 0 1px 3px rgba(0,0,0,.1) !important;
+  -moz-box-shadow   : inset 0 -1px 0 #cfcece, inset 0 1px 0 #f0f0f0, 0 1px 3px rgba(0,0,0,.1) !important;
+  -o-box-shadow     : inset 0 -1px 0 #cfcece, inset 0 1px 0 #f0f0f0, 0 1px 3px rgba(0,0,0,.1) !important;
+  box-shadow        : inset 0 -1px 0 #cfcece, inset 0 1px 0 #f0f0f0, 0 1px 3px rgba(0,0,0,.1) !important;
 }
 #viewer-header-container { border-bottom: 0 solid transparent !important; }
 #sections-header { margin-bottom: 0 !important; }
@@ -512,6 +591,7 @@ body { padding:0 !important; margin:0 !important;}
   -webkit-background-clip: padding-box !important;
   background-clip        : padding-box !important;
 }
+#mark-all-as-read-split-button .goog-flat-menu-button-collapse-left {left:-1px !important;}
 #viewer-top-controls .jfk-button-collapse-left, #mark-all-as-read-split-button .goog-flat-menu-button-collapse-left {
   border-bottom-left-radius:0 !important;
   border-top-left-radius:0 !important;
@@ -617,11 +697,21 @@ img[src="/reader/ui/138769644-magnifying_glass.png"] {
 }
 #item-up-down-buttons { margin-right: 0px !important; }
 .goog-menuheader { color: #888 !important; }
+.jfk-button-standard .jfk-button-img {opacity:1 !important;}
+#settings-button .goog-flat-menu-button-dropdown {
+  right:8px !important;
+  top:8px !important;
+}
+#sections-header .settings-button-container {
+  margin-right: 8px !important;
+  margin-top: 3px !important;
+}
+.goog-flat-menu-button {margin: 0 !important;}
 /* @end */
 
 /* @group Viewer */
 #viewer-container {
-  background: url('https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/bg.png') repeat !important;
+  background: url('https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/bg2.jpg') repeat !important;
   background-color: #e1e2e3 !important;
 }
 
@@ -675,6 +765,7 @@ img[src="/reader/ui/138769644-magnifying_glass.png"] {
 .entry .entry-icons { margin-left: 0 !important; }
 #current-entry .card { border-color: #4e73d5 !important }
 .card .card-content { padding: 8px 0 5px !important; }
+.card {border: 1px solid transparent !important;}
 .entry-title-go-to { background-position: left -411px !important; }
 #chrome-title {
   color:#3f3f3f !important;
@@ -755,7 +846,8 @@ img[src="/reader/ui/1567066642-down-arrow.png"] {display: none !important;}
   padding:8px 1em !important;
 }
 #entries.search .entry .search-result .entry-title-link {text-decoration: none !important;}
-.cards .entry { margin:6px 6px 6px 1px !important; }
+.cards .entry { margin:6px !important; }
+#entries.list {padding-left:0 !important;}
 /* @end */
 
 /* @group Pages-Home */

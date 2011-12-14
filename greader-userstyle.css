@@ -1,8 +1,8 @@
 /*! Copyright (c) 2011 Allen Bargi.
 twitter: @aziz
 github:  http://github.com/aziz/Google-Reader-Lion-UI
-Version: 1.3
-Release Date: 2011-11-21
+Version: 1.4
+Release Date: 2011-12-09
 */
 @namespace url(http://www.w3.org/1999/xhtml);
 @-moz-document regexp("https?://www.google.*/reader/.*") {
@@ -181,7 +181,7 @@ img[src="/reader/ui/345992534-settings.png"]{background: url(data:image/png;base
 .goog-menuheader { color: #888 !important; }
 
 /* @group Viewer */
-#viewer-container{background:url('https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/bg.png') repeat !important;background-color:#e1e2e3 !important;}
+#viewer-container{background:url('https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/bg2.jpg') repeat !important;background-color:#e1e2e3 !important;}
 #title-and-status-holder{background:rgb(252,252,252) !important;background:-moz-linear-gradient(top,rgba(252,252,252,1) 0%,rgba(245,245,245,1) 46%,rgba(236,236,236,1) 54%,rgba(249,249,249,1) 100%) !important;background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(252,252,252,1)),color-stop(46%,rgba(245,245,245,1)),color-stop(54%,rgba(236,236,236,1)),color-stop(100%,rgba(249,249,249,1))) !important;background:-webkit-linear-gradient(top,rgba(252,252,252,1) 0%,rgba(245,245,245,1) 46%,rgba(236,236,236,1) 54%,rgba(249,249,249,1) 100%) !important;background:-o-linear-gradient(top,rgba(252,252,252,1) 0%,rgba(245,245,245,1) 46%,rgba(236,236,236,1) 54%,rgba(249,249,249,1) 100%) !important;background:linear-gradient(top,rgba(252,252,252,1) 0%,rgba(245,245,245,1) 46%,rgba(236,236,236,1) 54%,rgba(249,249,249,1) 100%) !important;padding:0 8px !important;margin:0 !important;border-bottom:1px solid #b6b6b6 !important;}
 #entries{border-top:0 solid transparent !important;padding-right:0 !important;}
 #entries .entry,#entries.list .entry-container{background:transparent !important;}
