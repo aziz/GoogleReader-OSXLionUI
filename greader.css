@@ -2,7 +2,7 @@
   twitter: @aziz
   github: http://github.com/aziz/Google-Reader-Lion-UI
   Version: 1.4
-  Release Date: 2011-12-10
+  Release Date: 2011-12-17
 */
 
 /* @group Fonts */
@@ -72,7 +72,7 @@ body { padding:0 !important; margin:0 !important;}
 }
 /* @end */
 
-/* @group Topbar */
+/* @group GBar */
 #nav #logo-section {display: none !important;}
 
 #gb {
@@ -120,7 +120,7 @@ body { padding:0 !important; margin:0 !important;}
 .gbmab, .gbmac { top: -12px !important; }
 #gbd4, #gbd3, #gbd2, #gbd1 { top:38px !important;}
 #gbwc { top:48px !important;}
-#gbq1 .gbmai { top: 16px !important; }
+#gbq1 .gbmai { top: 14px !important; }
 #gbq1 {
   margin-left: 16px !important;
   top: 2px !important;
@@ -184,24 +184,21 @@ opacity   : 0.7;
 }
 
 #gbz {
-  z-index:999999 !important;
-/*
-  display: block !important;
-  visibility: visible !important;
-  overflow-x:visible !important;
-  overflow-y:visible !important;
-  opacity: 1 !important;
-*/
+  z-index:999 !important;
   top:40px !important;
   left:-12px !important;
   margin-left:0 !important;
   margin:0 !important;
 }
-.gbesi #gbq1 .gbmab, .gbes #gbq1 .gbmab, .gbesi #gbq1 .gbmac, .gbes #gbq1 .gbmac {
+.gbesi #gbq1 .gbmab, .gbes #gbq1 .gbmab, .gbesi #gbq1 .gbmac, .gbes #gbq1 .gbmac,#gbq1 #gbqla .gbmab, #gbq1 #gbqla .gbmac {
   margin: 0 !important;
   top: 28px !important;
   left: 15px !important;
 }
+#gbq1.gbto #gbz, #gbq1.gbto #gbs, .gbesi #gbq1.gbto #gbz, .gbesi #gbq1.gbto #gbs, .gbes #gbq1.gbto #gbz, .gbes #gbq1.gbto #gbs {top: 37px !important;}
+.gbesi#gb #gbg1 .gbmab, .gbes#gbg1 .gbmab, .gbesi#gb #gbg3 .gbmab, .gbes#gbg3 .gbmab, .gbesi#gb #gbgs4 .gbmab, .gbes#gbg4 .gbmab { margin: 40px 0 0 !important;}
+.gbesi#gb #gbg1 .gbmac, .gbes#gbg1 .gbmac, .gbesi#gb #gbg3 .gbmac, .gbes#gbg3 .gbmac, .gbesi#gb #gbgs4 .gbmac, .gbes#gbg4 .gbmac { margin: 41px 0 0 !important;}
+#gbu .gbt { margin-left: 8px !important; }
 /* @end */
 
 /* @group Add Subscription button */
@@ -216,8 +213,8 @@ opacity   : 0.7;
   margin-left: 0 !important;
   margin-top: 0 !important;
   position: absolute !important;
-  top: -33px !important;
-  left: 236px !important;
+  top: -37px !important;
+  left: 237px !important;
   z-index: 99999 !important;
   padding:0 7px 0 5px !important;
   width: 16px !important;
@@ -235,16 +232,16 @@ opacity   : 0.7;
   -webkit-border-radius: 0 !important;
   -moz-border-radius   : 0 !important;
   border-radius        : 0 !important;
-  height: 29px !important;
+  height: 36px !important;
 }
 #lhn-add-subscription-section .jfk-button-primary:after {
   content: "" !important;
-  background: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/line.png") !important;
+  background: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/sep.png") !important;
   background-position: 0 0 !important;
   border: 0 !important;
   font-size: 0 !important;
   padding: 29px 0 0 !important;
-  width: 1px !important;
+  width: 2px !important;
   height: 22px !important;
   display: inline-block !important;
   position: absolute !important;
@@ -488,35 +485,22 @@ opacity   : 0.7;
 #chrome-lhn-menu.goog-menu-button .goog-menu-button-dropdown { top: 6px !important; right: 3px !important; }
 #sections-header .lhn-nav-button-container { margin: 2px 8px 0 !important; }
 .overview-section-header { padding: 0 1em 0 0 !important; }
-.lhn-nav-button-container #chrome-lhn-menu:not(.hidden):before {
-  content: "" !important;
-  position: absolute !important;
-  display: block !important;
-  top: -40px !important;
-  left: -10px !important;
-  height: 29px !important;
-  z-index: 99999 !important;
-  padding:0 7px 0 5px !important;
-  width: 16px !important;
-  min-width: 16px !important;
-  overflow: hidden !important;
-  text-indent: -999px !important;
-  background: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/subscribe.png") center center no-repeat !important;
-}
-.lhn-nav-button-container #chrome-lhn-menu:not(.hidden):after {
-  content: "" !important;
-  background: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/line.png") !important;
-  background-position: 0 0 !important;
-  padding: 0 !important;
-  width: 1px !important;
-  height: 22px !important;
-  display: block !important;
-  position: absolute !important;
-  left: 17px !important;
-  top: -37px !important;
-  z-index: 999 !important;
-}
 #viewer-top-controls, #viewer-header { overflow: visible !important; }
+.lhn-hidden #gb #gbq2 {
+  margin-left: 110px !important;
+  -webkit-transition: all 500ms ease !important;
+  -moz-transition:    all 500ms ease !important;
+  -o-transition:      all 500ms ease !important;
+  transition:         all 500ms ease !important;
+}
+#gb #gbq2 {
+  margin-left: 272px !important;
+  -webkit-transition: all 200ms ease !important;
+  -moz-transition:    all 200ms ease !important;
+  -o-transition:      all 200ms ease !important;
+  transition:         all 200ms ease !important;
+}
+
 /* @end */
 
 /* @group Viewer Header */
@@ -729,7 +713,7 @@ img[src="/reader/ui/138769644-magnifying_glass.png"] {
 
 #entries {
   border-top: 0 solid transparent !important;
-  padding-right: 0 !important;
+  padding: 0 !important;
 }
 
 #entries .entry, #entries.list .entry-container { background: transparent !important; }
@@ -783,7 +767,7 @@ img[src="/reader/ui/138769644-magnifying_glass.png"] {
   background-image: -webkit-linear-gradient(top, #fcf6d2, #faeaba);
   background-image: -o-linear-gradient(top, #fcf6d2, #faeaba);
   background-image: linear-gradient(top, #fcf6d2, #faeaba);
-  margin:-1px 0 5px 0 !important;
+  margin:0 1.5em 0 0 !important;
 }
 .preview-interruption-related-streams {
   background: transparent !important;
@@ -848,6 +832,7 @@ img[src="/reader/ui/1567066642-down-arrow.png"] {display: none !important;}
 #entries.search .entry .search-result .entry-title-link {text-decoration: none !important;}
 .cards .entry { margin:6px !important; }
 #entries.list {padding-left:0 !important;}
+#entries.list #current-entry.expanded .entry-container { border-left: solid 0 transparent !important; }
 /* @end */
 
 /* @group Pages-Home */
@@ -887,6 +872,7 @@ img[src="/reader/ui/1567066642-down-arrow.png"] {display: none !important;}
   font-size: 12px !important;
   border-bottom: 0 solid transparent !important;
 }
+.section-header {border-bottom: 0 solid transparent !important;}
 /* @end */
 
 /* @group Pages-Trends */
