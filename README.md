@@ -12,30 +12,34 @@ I spend a considerable amount of time everyday on Google Reader. In fact, for me
 > ### Chrome
 > 1. [Install stylish addon from chrome web store](https://chrome.google.com/webstore/detail/fjnbnpbmkenffdnngjfgmeleoegfcffe)
 > 2. [Install this user style from the userstyles.org website](http://bit.ly/greader-lion-ui)
-> 
+>
 > ------
-> 
+>
 > ![Firefox](https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/firefox.png)
 > ### Firefox
 > 1. [Install stylish extension from Firefox addons](https://addons.mozilla.org/en-US/firefox/addon/stylish/)
 > 2. [Install this user style from the userstyles.org website](http://bit.ly/greader-lion-ui)
-> 
+>
 > -----
-> 
+>
 > ![Safari](https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/safari.png)
 > ### Safari
-> 
+>
 > ![Safariextz](https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/safariextz.png)[Install this safari extenstion](https://github.com/aziz/Google-Reader-Lion-UI/raw/master/Google%20Reader%20Lion%20UI.safariextz)
+
+
+**NOTE**: If you're still on the old google bar for any reason, you should install the older version of this user style
+[from here](http://userstyles.org/styles/58056/google-reader-mac-os-lion-ui-old-google-bar)
 
 ## Contributing
 
-Feel free to fork this repo and add your changes. make sure to make a pull request so that I can merge your changes and share it with others. 
+Feel free to fork this repo and add your changes. make sure to make a pull request so that I can merge your changes and share it with others.
 
 [See the full list of contributors](https://github.com/aziz/Google-Reader-Lion-UI/contributors)
 
 ## History ##
 
-#### 1.3 
+#### 1.3
 * Added style for the new settings button
 * Fixed scrolling issues
 * More whilelist URLs for Safari extension (courtesy of [Vidal van Bergen](https://github.com/vidalvanbergen))
@@ -58,6 +62,6 @@ Feel free to fork this repo and add your changes. make sure to make a pull reque
 * Initial Release
 
 
-  
+
 ------
 Copyright &copy; 2011 Allen Bargi
