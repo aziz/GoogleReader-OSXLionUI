@@ -4,7 +4,8 @@
   Version: 1.4
   Release Date: 2011-12-21
 */
-
+@namespace url(http://www.w3.org/1999/xhtml);
+@-moz-document regexp("https?://www.google.*/reader/.*") {
 /*  Fonts */
 @font-face{font-family:'Open Sans' !important;font-style:normal !important;font-weight:300 !important;src:local('Open Sans Light'),local('OpenSans-Light'),url('https://themes.googleusercontent.com/static/fonts/opensans/v5/DXI1ORHCpsQm3Vp6mXoaTaRDOzjiPcYnFooOUGCOsRk.woff') format('woff') !important;}
 @font-face{font-family:'Open Sans' !important;font-style:italic !important;font-weight:300 !important;src:local('Open Sans Light Italic'),local('OpenSansLight-Italic'),url('https://themes.googleusercontent.com/static/fonts/opensans/v5/PRmiXeptR36kaC0GEAetxvR_54zmj3SbGZQh3vCOwvY.woff') format('woff') !important;}
@@ -302,3 +303,4 @@ img[src^="http://feedads.g.doubleclick.net/"]{display:none !important;}
 #gbi4 .gbma{color:#666 !important;}
 .gbgt-hvr #gbi4 #gbi4m1{color:#ccc !important;}
 .gbgt-hvr #gbi4 .gbma{border-top-color:#ccc !important;}
+}
