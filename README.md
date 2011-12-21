@@ -29,7 +29,7 @@ I spend a considerable amount of time everyday on Google Reader. In fact, for me
 
 
 **NOTE**: If you're still on the old google bar for any reason, you should install the older version of this user style
-[from here](http://userstyles.org/styles/58056/google-reader-mac-os-lion-ui-old-google-bar)
+[from here](http://userstyles.org/styles/58056/google-reader-mac-os-lion-ui-old-google-bar) or for safari install [from here](https://github.com/aziz/Google-Reader-Lion-UI/raw/master/Google%20Reader%20Lion%20UI%20-%20Old%20Google%20Bar.safariextz)
 
 ## Contributing
 
