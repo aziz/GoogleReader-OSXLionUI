@@ -2,7 +2,7 @@
   twitter: @aziz
   github: http://github.com/aziz/Google-Reader-Lion-UI
   Version: 1.4
-  Release Date: 2011-12-17
+  Release Date: 2011-12-21
 */
 
 /* @group Fonts */
@@ -95,10 +95,10 @@ body { padding:0 !important; margin:0 !important;}
 }
 .gbes#gbx1, .gbes#gbx2, .gbes#gbqlw, .gbesi#gb #gbx1, .gbesi#gb #gbx2, .gbesi#gb #gbqlw { height: 36px !important; }
 .gbes#gbmail, .gbesi#gb #gbmail { top: 16px !important; }
-.gbes#gbv, .gbes#gbn, .gbes#gbq2, .gbes#gbq3, .gbesi#gb #gbv, 
-.gbesi#gb #gbn, .gbesi#gb #gbq2, .gbesi#gb #gbq3 { 
+.gbes#gbv, .gbes#gbn, .gbes#gbq2, .gbes#gbq3, .gbesi#gb #gbv,
+.gbesi#gb #gbn, .gbesi#gb #gbq2, .gbesi#gb #gbq3 {
   padding-top: 4px !important;
-  padding-bottom: 0 !important; 
+  padding-bottom: 0 !important;
 }
 .gbes#gbv, .gbesi#gb #gbv { margin-right: 24px !important; }
 #gbql {
@@ -155,7 +155,7 @@ width: 14px !important;
 opacity   : 0.7;
 }
 
-#gbqfq { 
+#gbqfq {
   height:25px !important;
   font-size: 14px !important;
   margin-top:0 !important;
@@ -653,10 +653,10 @@ img[src="/reader/ui/138769644-magnifying_glass.png"], img[src="/reader/ui/345992
   width: 0 !important;
   height: 0 !important;
   padding:14px 0 0 14px !important;
-  margin-top: -3px !important;  
+  margin-top: -3px !important;
 }
-img[src="/reader/ui/345992534-settings.png"] { 
-  background: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/settings.png") no-repeat !important; 
+img[src="/reader/ui/345992534-settings.png"] {
+  background: url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/settings.png") no-repeat !important;
   position: relative !important;
   top:-1px !important;
 }
