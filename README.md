@@ -39,6 +39,12 @@ Feel free to fork this repo and add your changes. make sure to make a pull reque
 
 ## History ##
 
+#### 1.5
+* yet again, Google changed their top bar! yet again, I changed the userstyle to support it!
+
+#### 1.4 
+* added support for the new google bar 
+
 #### 1.3
 * Added style for the new settings button
 * Fixed scrolling issues
