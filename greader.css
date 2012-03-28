@@ -977,7 +977,9 @@ img[src="/reader/ui/1567066642-down-arrow.png"] {display: none !important;}
 /* @group AD BLOCKERS  */
 #ads, iframe[src^="http://feedads."],
 img[src^="http://feeds.feedburner.com/~ff/"],
-img[src^="http://feedads.g.doubleclick.net/"] { display:none !important; }
+img[src^="http://feedads.g.doubleclick.net/"],
+a[href^="http://rss.buysellads.com"] { display:none !important; }
+
 /* @end */
 
 /* @group Addons Support */
