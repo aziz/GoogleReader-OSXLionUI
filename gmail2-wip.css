@@ -1,0 +1,55 @@
+* {
+   font-family: "open sans" !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+#gbx3, #gbzc {display:none !important;}
+
+#gb .gbes#gbx1, #gb .gbes#gbx2, .gbesi#gb #gbx1, .gbesi#gb #gbx2, #gb .gbes#gbq,
+#gb .gbes#gbu, .gbesi#gb #gbq, .gbesi#gb #gbu, #gbx1,
+#gb #gbx1, #gbq, #gbu, #gb #gbq, #gb #gbu {
+  top: 0 !important;
+}
+
+.qp { margin-bottom: -42px !important; }
+
+.gbes#gb, .gbesi#gb, #gb { height: 45px !important; }
+
+/*.Bs { top:24px !important; }*/
+
+#gbx3, #gbx4 {
+  background-color: transparent !important;
+  border-bottom: 1px solid transparent !important;
+}
+
+#gbz .gbzt, #gbz .gbgt, #gbg .gbgt { color: #666 !important; }
+
+.Z9 {
+  position: relative !important;
+  top: -7px !important;
+}
+
+.gbz0l .gbts { color: black !important; }
+
+#gbz { display:none !important; }
+
+.w-asV.aiw { height: 45px !important; }
+
+#gbq1, .Z8 { display:none !important; }
+
+.aki {
+  position: relative !important;
+  top: -46px !important;
+  z-index: 9 !important;
+}
+
+.aic {
+  position: absolute !important;
+  top: -44px !important;
+  z-index: 4 !important;
+}
+
+.n3 {
+  position: relative !important;
+  top: 0px !important;
+}

@@ -1,8 +1,8 @@
 /*! Copyright (c) 2011 Allen Bargi.
   twitter: @aziz
   github: http://github.com/aziz/Google-Reader-Lion-UI
-  Version: 1.5
-  Release Date: 2012-03-20
+  Version: 1.5.1
+  Release Date: 2012-05-10
 */
 @namespace url(http://www.w3.org/1999/xhtml);
 @-moz-document regexp("https?://www.google.*/reader/.*") {
@@ -307,4 +307,9 @@ img[src^="http://feedads.g.doubleclick.net/"]{display:none !important;}
 /* fixing new new gbar! */
 #gbx3, #gbzc {display:none !important;}
 #gb .gbes#gbx1, #gb .gbes#gbx2, .gbesi#gb #gbx1, .gbesi#gb #gbx2, #gb .gbes#gbq, #gb .gbes#gbu, .gbesi#gb #gbq, .gbesi#gb #gbu, #gbx1, #gb #gbx1, #gbq, #gbu, #gb #gbq, #gb #gbu { top: 0 !important; }
+
+#gbv, #gbu { margin-right: 8px !important; }
+#gbsf .jRa {visibility:hidden !important; }
+#gbwc { top: -58px !important; }
+#gbwc.gbes { top: -30px !important; }
 }

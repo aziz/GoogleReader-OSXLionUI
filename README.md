@@ -39,6 +39,9 @@ Feel free to fork this repo and add your changes. make sure to make a pull reque
 
 ## History ##
 
+#### 1.5.1
+* minor layout fixes for google bar
+
 #### 1.5
 * yet again, Google changed their top bar! yet again, I changed the userstyle to support it!
 
