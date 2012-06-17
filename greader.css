@@ -1,8 +1,8 @@
 /*! Copyright (c) 2011 Allen Bargi.
   twitter: @aziz
   github: http://github.com/aziz/Google-Reader-Lion-UI
-  Version: 1.5.1
-  Release Date: 2012-05-10
+  Version: 1.5.2
+  Release Date: 2012-06-17
 */
 
 /* @group Fonts */
@@ -1008,3 +1008,6 @@ a[href^="http://rss.buysellads.com"] { display:none !important; }
 #gbsf .jRa {visibility:hidden !important; }
 #gbwc { top: -58px !important; }
 #gbwc.gbes { top: -30px !important; }
+
+/* fixing loading bug */
+.pFb {display:none !important;}

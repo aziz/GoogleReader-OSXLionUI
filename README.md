@@ -39,14 +39,17 @@ Feel free to fork this repo and add your changes. make sure to make a pull reque
 
 ## History ##
 
+#### 1.5.2
+* Removed annoying "loading..." message in the top right corner of the screen
+
 #### 1.5.1
-* minor layout fixes for google bar
+* Minor layout fixes for google bar
 
 #### 1.5
-* yet again, Google changed their top bar! yet again, I changed the userstyle to support it!
+* Yet again, Google changed their top bar! yet again, I changed the userstyle to support it!
 
 #### 1.4 
-* added support for the new google bar 
+* Added support for the new google bar 
 
 #### 1.3
 * Added style for the new settings button
