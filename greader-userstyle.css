@@ -312,4 +312,7 @@ img[src^="http://feedads.g.doubleclick.net/"]{display:none !important;}
 #gbsf .jRa {visibility:hidden !important; }
 #gbwc { top: -58px !important; }
 #gbwc.gbes { top: -30px !important; }
+
+/* fixing loading bug */
+.pFb {display:none !important;}
 }
