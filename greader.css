@@ -103,7 +103,7 @@ body { padding:0 !important; margin:0 !important;}
 .gbes#gbv, .gbesi#gb #gbv { margin-right: 24px !important; }
 #gbql {
   background-position: 0 0 !important;
-  background-image: url('https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/logo.png');
+  background-image: url('https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/logo.png') !important;
   height: 27px !important;
   width: 71px !important;
 }
@@ -1011,3 +1011,5 @@ a[href^="http://rss.buysellads.com"] { display:none !important; }
 
 /* fixing loading bug */
 .pFb {display:none !important;}
+/* hiding search icon in firefox */
+.gbqfi { display: none !important; }

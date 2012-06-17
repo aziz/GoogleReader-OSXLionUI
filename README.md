@@ -41,6 +41,9 @@ Feel free to fork this repo and add your changes. make sure to make a pull reque
 
 #### 1.5.2
 * Removed annoying "loading..." message in the top right corner of the screen
+* Updated Safari Extension
+* Fixed logo for Safari and Firefox
+* Minor Firefox bug fixes
 
 #### 1.5.1
 * Minor layout fixes for google bar
