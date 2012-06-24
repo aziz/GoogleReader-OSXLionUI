@@ -1,4 +1,4 @@
-/*! Copyright (c) 2011 Allen Bargi.
+/*! Copyright (c) 2011-2012 Allen Bargi.
   twitter: @aziz
   github: http://github.com/aziz/Google-Reader-Lion-UI
   Version: 1.5.2
@@ -11,12 +11,6 @@
   font-style: normal !important;
   font-weight: 300 !important;
   src: local('Open Sans Light'), local('OpenSans-Light'), url('https://themes.googleusercontent.com/static/fonts/opensans/v5/DXI1ORHCpsQm3Vp6mXoaTaRDOzjiPcYnFooOUGCOsRk.woff') format('woff') !important;
-}
-@font-face {
-  font-family: 'Open Sans' !important;
-  font-style: italic !important;
-  font-weight: 300 !important;
-  src: local('Open Sans Light Italic'), local('OpenSansLight-Italic'), url('https://themes.googleusercontent.com/static/fonts/opensans/v5/PRmiXeptR36kaC0GEAetxvR_54zmj3SbGZQh3vCOwvY.woff') format('woff') !important;
 }
 @font-face {
   font-family: 'Open Sans' !important;
@@ -41,12 +35,6 @@
   font-style: normal !important;
   font-weight: 700 !important;
   src: local('Open Sans Bold'), local('OpenSans-Bold'), url('https://themes.googleusercontent.com/static/fonts/opensans/v5/k3k702ZOKiLJc3WVjuplzKRDOzjiPcYnFooOUGCOsRk.woff') format('woff') !important;
-}
-@font-face {
-  font-family: 'Open Sans' !important;
-  font-style: normal !important;
-  font-weight: 800 !important;
-  src: local('Open Sans Extrabold'), local('OpenSans-Extrabold'), url('https://themes.googleusercontent.com/static/fonts/opensans/v5/EInbV5DfGHOiMmvb1Xr-hqRDOzjiPcYnFooOUGCOsRk.woff') format('woff') !important;
 }
 /* @end */
 
@@ -287,7 +275,7 @@ opacity   : 0.7;
 .lhn-section-secondary li a {border-left: 3px solid transparent !important;}
 #nav a, #nav a .text, #recs-tree-item-0-name, #sub-tree-header {
   color: #6f7e8b !important;
-  text-shadow: 0 1px 0 rgba(255,255,255,.75) !important;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5) !important;
 }
 #overview-selector, #lhn-selectors .selector, .scroll-tree .lhn-section-primary, #sub-tree-header { border-left: 3px solid transparent !important; }
 .folder .folder > a > .icon, .folder .tag-icon, .folder .sub-icon { margin-left: 24px !important; }
@@ -425,6 +413,7 @@ opacity   : 0.7;
 }
 #chrome { margin-left: 264px !important; }
 #lhn-selectors.section-minimized .selectors-footer {display: none !important;}
+.scroll-tree li a .name-unread { font-weight: 600 !important;}
 /* @end */
 
 /* @group Fullscreen */
@@ -859,7 +848,8 @@ img[src="/reader/ui/1567066642-down-arrow.png"] {display: none !important;}
   overflow: hidden !important;
 }
 #recent-activity .recent h4 {
-  font-size: 15px !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
   text-transform: uppercase !important;
 }
 #recent-activity .recent h4 a { color: #6f7e8b !important; }
@@ -1013,3 +1003,64 @@ a[href^="http://rss.buysellads.com"] { display:none !important; }
 .pFb {display:none !important;}
 /* hiding search icon in firefox */
 .gbqfi { display: none !important; }
+
+/*=== ADD THIS TO USER STYLE =====================================================*/
+
+/* Sidebar */
+#lhn-selectors .selector a, #recommendations-tree .lhn-section-secondary .name {
+  font-weight: 600 !important;
+}
+
+/* Pages-Browse-for-Stuff */
+#directory-box #sections-holder {
+  padding-left: 0 !important;
+  padding-top: 0 !important;
+}
+
+#directory-box .tab-group, .tab-group-headers {
+  background-color: transparent !important;
+}
+
+#directory-box h3 {
+  border-bottom: 1px solid #eee !important;
+}
+
+/* Pages-Trends */
+.sorting-sub-name a, .top-links span {
+  text-decoration: none !important;
+  line-height: 20px !important;
+}
+
+#trends .sorting .trends-sorting-homepage {
+  opacity: .2 !important;
+}
+#trends .sorting .trends-sorting-homepage:hover {
+  opacity: 1 !important;
+}
+.tab-group-contents {
+  padding: 1px 0 1px !important;
+}
+
+#trends .sorting td {
+ padding: 0 5px !important;
+}
+
+#trends .sorting .alt td { background:  #f3f6fa !important; }
+#trends .sorting .sorting-sub-primary { background: #f3f6fa !important; }
+#trends .sorting .alt .sorting-sub-primary { background: #e8edf5 !important; }
+.tab-header {
+  background-color: rgba(0,0,0,.075) !important;
+  border-color: transparent !important;
+  color: #000 !important;
+}
+.tab-header-selected {
+  border-color:#4a9cd7 !important;
+  background-color: #fff !important;
+}
+
+/* Pages-Home */
+#overview > .section-header { display: none !important;}
+#overview .overview-header { margin-bottom: 0 !important; }
+
+
+
