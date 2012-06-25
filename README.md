@@ -38,6 +38,8 @@ Feel free to fork this repo and add your changes. make sure to make a pull reque
 [See the full list of contributors](https://github.com/aziz/Google-Reader-Lion-UI/contributors)
 
 ## History ##
+#### 1.6.0
+* A whole bunch of improvements for things you barely see. 
 
 #### 1.5.2
 * Removed annoying "loading..." message in the top right corner of the screen
