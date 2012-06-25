@@ -1,7 +1,7 @@
 /*! Copyright (c) 2011-2012 Allen Bargi.
   twitter: @aziz
   github: http://github.com/aziz/Google-Reader-Lion-UI
-  Version: 1.5.2
+  Version: 1.6.0
   Release Date: 2012-06-17
 */
 
@@ -221,6 +221,7 @@ opacity   : 0.7;
   -moz-border-radius   : 0 !important;
   border-radius        : 0 !important;
   height: 36px !important;
+  cursor: pointer !important;
 }
 #lhn-add-subscription-section .jfk-button-primary:after {
   content: "" !important;
@@ -240,15 +241,15 @@ opacity   : 0.7;
   -moz-box-shadow   : none !important;
   -o-box-shadow     : none !important;
   box-shadow        : none !important;
-  background: #4c4c4c url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/subscribe-s.png") center center no-repeat !important;
+  background: transparent url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/subscribe.png") center center no-repeat !important;
 }
 #lhn-add-subscription-section .jfk-button-primary.goog-button-base-open  {
-  background-color: #fff !important;
+  background-color: transparent !important;
   color:#666 !important;
   text-shadow: 0 1px rgba(0,0,0,0) !important;
 }
 #lhn-add-subscription-section .jfk-button-primary.goog-button-base-open.jfk-button-hover  {
-  background: #fff url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/subscribe.png") center center no-repeat !important;
+  background: transparent url("https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/subscribe.png") center center no-repeat !important;
 }
 #quick-add-bubble-holder {
   border: 1px solid #bebebe !important;
@@ -260,7 +261,22 @@ opacity   : 0.7;
   margin-top:-1px !important;
   margin-left: -1px !important;
 }
-#quick-add-close { background: url('https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/close.png') no-repeat !important; }
+
+#quick-add-bubble-holder:before {
+  content: "" !important;
+  position: absolute !important;
+  width: 0 !important;
+  height: 0 !important;
+  border: 8px solid transparent !important;
+  border-bottom: 8px solid #fff !important;
+  top: -16px !important;
+  left: 5px !important;
+}
+
+#quick-add-close {
+  background: url('https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/close.png') no-repeat !important;
+  display: none !important;
+}
 /* @end */
 
 /* @group SIDEBAR */
@@ -413,7 +429,7 @@ opacity   : 0.7;
 }
 #chrome { margin-left: 264px !important; }
 #lhn-selectors.section-minimized .selectors-footer {display: none !important;}
-.scroll-tree li a .name-unread { font-weight: 600 !important;}
+.scroll-tree li a .name-unread, #lhn-selectors .selector a, #recommendations-tree .lhn-section-secondary .name { font-weight: 600 !important; }
 /* @end */
 
 /* @group Fullscreen */
@@ -756,7 +772,7 @@ img[src="/reader/ui/138769644-magnifying_glass.png"] {
   background-image: -webkit-linear-gradient(top, #fcf6d2, #faeaba);
   background-image: -o-linear-gradient(top, #fcf6d2, #faeaba);
   background-image: linear-gradient(top, #fcf6d2, #faeaba);
-  margin:0 1.5em 0 0 !important;
+  margin:0 !important;
 }
 .preview-interruption-related-streams {
   background: transparent !important;
@@ -822,6 +838,13 @@ img[src="/reader/ui/1567066642-down-arrow.png"] {display: none !important;}
 .cards .entry { margin:6px !important; }
 #entries.list {padding-left:0 !important;}
 #entries.list #current-entry.expanded .entry-container { border-left: solid 0 transparent !important; }
+.entry .entry-body { font-size: 15px !important; }
+.entry .entry-body code, .entry .entry-body pre {
+  font-size: 13px !important;
+  font-family: monaco, consolas !important;
+  color: #129131 !important;
+  background-color: #f5f5f5 !important;
+}
 /* @end */
 
 /* @group Pages-Home */
@@ -863,12 +886,57 @@ img[src="/reader/ui/1567066642-down-arrow.png"] {display: none !important;}
   border-bottom: 0 solid transparent !important;
 }
 .section-header {border-bottom: 0 solid transparent !important;}
+#overview > .section-header { display: none !important; }
+#overview .overview-header { margin-bottom: 0 !important; }
 /* @end */
 
 /* @group Pages-Trends */
 #trends-item-count-header {
   color: #343434 !important;
   text-shadow:1px 1px rgba(255,255,255,.75) !important;
+}
+
+.sorting-sub-name a, .top-links span {
+  text-decoration: none !important;
+  line-height: 20px !important;
+}
+
+#trends .sorting .trends-sorting-homepage { opacity: .2 !important; }
+#trends .sorting .trends-sorting-homepage:hover { opacity: 1 !important; }
+#trends .sorting td { padding: 0 5px !important; }
+#trends .sorting .alt td { background:  #f3f6fa !important; }
+#trends .sorting .sorting-sub-primary { background: #f3f6fa !important; }
+#trends .sorting .alt .sorting-sub-primary { background: #e8edf5 !important; }
+#trends .sorting th { border-bottom: 1px solid #b6b6b6 !important; }
+
+#trends .sorting-container .top-links  {
+  border-top: 1px solid #b4b4b4 !important;
+  padding: 2px 6px !important;
+}
+
+.tab-group-contents { padding: 1px 0 1px !important; }
+
+.tab-header {
+  background-color: rgba(0,0,0,.075) !important;
+  border-color: transparent !important;
+  color: #000 !important;
+}
+
+.tab-header-selected {
+  border-color:#4a9cd7 !important;
+  background-color: #fff !important;
+}
+
+#trends .sorting th  {
+  background: #ffffff !important;
+  background: -moz-linear-gradient(top,  #ffffff 0%, #ffffff 20%, #f4f4f4 53%, #ececec 53%, #ededed 96%, #f4f4f4 100%) !important;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(20%,#ffffff), color-stop(53%,#f4f4f4), color-stop(53%,#ececec), color-stop(96%,#ededed), color-stop(100%,#f4f4f4)) !important;
+  background: -webkit-linear-gradient(top,  #ffffff 0%,#ffffff 20%,#f4f4f4 53%,#ececec 53%,#ededed 96%,#f4f4f4 100%) !important;
+  background: -o-linear-gradient(top,  #ffffff 0%,#ffffff 20%,#f4f4f4 53%,#ececec 53%,#ededed 96%,#f4f4f4 100%) !important;
+  background: linear-gradient(top,  #ffffff 0%,#ffffff 20%,#f4f4f4 53%,#ececec 53%,#ededed 96%,#f4f4f4 100%) !important;
+  font-weight: 600 !important;
+  line-height: 13px !important;
+  font-size: 11px !important;
 }
 /* @end */
 
@@ -982,11 +1050,37 @@ a[href^="http://rss.buysellads.com"] { display:none !important; }
 }
 /* @end */
 
+/* @group Play */
+.goog-menuitem-content { color: #000 !important; }
+/* @end */
+
 /* @group Reader in Google Apps for your domain  */
 #gbi4 #gbi4m1 {color:#343434 !important;}
 #gbi4 .gbma {color:#666 !important;}
 .gbgt-hvr #gbi4 #gbi4m1 {color:#ccc !important;}
 .gbgt-hvr #gbi4 .gbma {border-top-color:#ccc !important;}
+/* @end */
+
+/* @group Pages-Browse-for-Stuff */
+#directory-box #sections-holder {
+  padding-left: 0 !important;
+  padding-top: 0 !important;
+}
+
+#directory-box .tab-group, .tab-group-headers { background-color: transparent !important; }
+#directory-box h3 { border-bottom: 1px solid #eee !important; }
+#full-bundles-container { overflow: hidden !important; }
+.bundle-creator-page h1, #fixed-featured-bundles-page h2 {border-bottom: 0 !important;}
+
+#featured-bundles-container {
+  background-color: transparent !important;
+  border: 0 !important;
+  padding: 0 !important;
+}
+
+.bundle-container, #featured-bundles-container, .discover-google-bundles, #directory-featured-bundles-title { width: 320px !important; }
+.bundle-column { width: 330px !important; }
+.bundles-display .bundle-container { margin-right: 10px !important; }
 /* @end */
 
 /* fixing new new gbar! */
@@ -1001,66 +1095,7 @@ a[href^="http://rss.buysellads.com"] { display:none !important; }
 
 /* fixing loading bug */
 .pFb {display:none !important;}
+.gbmwc:not(.gbmwca) { display:none !important; }
+
 /* hiding search icon in firefox */
 .gbqfi { display: none !important; }
-
-/*=== ADD THIS TO USER STYLE =====================================================*/
-
-/* Sidebar */
-#lhn-selectors .selector a, #recommendations-tree .lhn-section-secondary .name {
-  font-weight: 600 !important;
-}
-
-/* Pages-Browse-for-Stuff */
-#directory-box #sections-holder {
-  padding-left: 0 !important;
-  padding-top: 0 !important;
-}
-
-#directory-box .tab-group, .tab-group-headers {
-  background-color: transparent !important;
-}
-
-#directory-box h3 {
-  border-bottom: 1px solid #eee !important;
-}
-
-/* Pages-Trends */
-.sorting-sub-name a, .top-links span {
-  text-decoration: none !important;
-  line-height: 20px !important;
-}
-
-#trends .sorting .trends-sorting-homepage {
-  opacity: .2 !important;
-}
-#trends .sorting .trends-sorting-homepage:hover {
-  opacity: 1 !important;
-}
-.tab-group-contents {
-  padding: 1px 0 1px !important;
-}
-
-#trends .sorting td {
- padding: 0 5px !important;
-}
-
-#trends .sorting .alt td { background:  #f3f6fa !important; }
-#trends .sorting .sorting-sub-primary { background: #f3f6fa !important; }
-#trends .sorting .alt .sorting-sub-primary { background: #e8edf5 !important; }
-.tab-header {
-  background-color: rgba(0,0,0,.075) !important;
-  border-color: transparent !important;
-  color: #000 !important;
-}
-.tab-header-selected {
-  border-color:#4a9cd7 !important;
-  background-color: #fff !important;
-}
-
-/* Pages-Home */
-#overview > .section-header { display: none !important;}
-#overview .overview-header { margin-bottom: 0 !important; }
-
-
-
