@@ -338,7 +338,6 @@ img[src^="http://feedads.g.doubleclick.net/"]{display:none !important;}
 /* fixing new new gbar! */
 #gbx3, #gbzc {display:none !important;}
 #gb .gbes#gbx1, #gb .gbes#gbx2, .gbesi#gb #gbx1, .gbesi#gb #gbx2, #gb .gbes#gbq, #gb .gbes#gbu, .gbesi#gb #gbq, .gbesi#gb #gbu, #gbx1, #gb #gbx1, #gbq, #gbu, #gb #gbq, #gb #gbu { top: 0 !important; }
-
 #gbv, #gbu { margin-right: 8px !important; }
 #gbsf .jRa {visibility:hidden !important; }
 #gbwc { top: -58px !important; }
@@ -347,6 +346,12 @@ img[src^="http://feedads.g.doubleclick.net/"]{display:none !important;}
 /* fixing loading bug */
 .pFb {display:none !important;}
 .gbmwc:not(.gbmwca) {display:none !important;}
+
 /* hiding search icon in firefox */
-.gbqfi { display: none !important; }
+.gbqfi{display:none !important;}
+
+/* BIDI fixes */
+#overview .sub-link .unread:before{content: "‎" !important;}
+.entry-title.rtl + .entry-author{width:650px !important;text-align:right !important;}
+.lhn-hidden .entry .entry-title,.lhn-hidden .entry-title.rtl + .entry-author {width: auto !important;}
 }

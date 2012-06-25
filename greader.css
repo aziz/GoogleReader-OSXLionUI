@@ -1099,3 +1099,8 @@ a[href^="http://rss.buysellads.com"] { display:none !important; }
 
 /* hiding search icon in firefox */
 .gbqfi { display: none !important; }
+
+/* BIDI FIXES */
+#overview .sub-link .unread:before { content: "‎" !important; }
+.entry-title.rtl + .entry-author {width: 650px !important;text-align:right !important;}
+.lhn-hidden .entry .entry-title,.lhn-hidden .entry-title.rtl + .entry-author {width: auto !important;max-width: 9999px !important;}
