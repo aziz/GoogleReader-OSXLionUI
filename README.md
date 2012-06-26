@@ -27,10 +27,6 @@ I spend a considerable amount of time everyday on Google Reader. In fact, for me
 >
 > ![Safariextz](https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/safariextz.png)[Install this safari extenstion](https://github.com/aziz/Google-Reader-Lion-UI/raw/master/Google%20Reader%20Lion%20UI.safariextz)
 
-
-**NOTE**: If you're still on the old google bar for any reason, you should install the older version of this user style
-[from here](http://userstyles.org/styles/58056/google-reader-mac-os-lion-ui-old-google-bar) or for safari install [from here](https://github.com/aziz/Google-Reader-Lion-UI/raw/master/Google%20Reader%20Lion%20UI%20-%20Old%20Google%20Bar.safariextz)
-
 ## Contributing
 
 Feel free to fork this repo and add your changes. make sure to make a pull request so that I can merge your changes and share it with others.
