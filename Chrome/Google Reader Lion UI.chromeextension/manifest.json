@@ -1,0 +1,28 @@
+{
+  "name": "Google Reader Lion UI",
+  "version": "1.5.2",
+  "manifest_version": 1,
+  "description": "Inspired by Mac OSX Lion",
+  "icons": { "128": "icon.png" },
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html",
+    "default_title": "Google Reader Lion UI"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://www.google.com/reader/view/*"],
+      "css": ["mystyles.css"],
+      "js": ["jquery.js", "myscript.js"]
+    }
+  ],
+  "permissions": [
+    "http://api.flickr.com/"
+  ]
+}
+
+// update_url
+// background_page
+// page_action
+// content scripts
+
