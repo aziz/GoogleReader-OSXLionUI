@@ -1,5 +1,39 @@
+/* @group Fonts */
+@font-face {
+  font-family: 'Open Sans' !important;
+  font-style: normal !important;
+  font-weight: 300 !important;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url('https://themes.googleusercontent.com/static/fonts/opensans/v5/DXI1ORHCpsQm3Vp6mXoaTaRDOzjiPcYnFooOUGCOsRk.woff') format('woff') !important;
+}
+@font-face {
+  font-family: 'Open Sans' !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  src: local('Open Sans'), local('OpenSans'), url('https://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff') format('woff') !important;
+}
+@font-face {
+  font-family: 'Open Sans' !important;
+  font-style: italic !important;
+  font-weight: 400 !important;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url('https://themes.googleusercontent.com/static/fonts/opensans/v5/xjAJXh38I15wypJXxuGMBrrIa-7acMAeDBVuclsi6Gc.woff') format('woff') !important;
+}
+@font-face {
+  font-family: 'Open Sans' !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url('https://themes.googleusercontent.com/static/fonts/opensans/v5/MTP_ySUJH_bn48VBG8sNSqRDOzjiPcYnFooOUGCOsRk.woff') format('woff') !important;
+}
+@font-face {
+  font-family: 'Open Sans' !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url('https://themes.googleusercontent.com/static/fonts/opensans/v5/k3k702ZOKiLJc3WVjuplzKRDOzjiPcYnFooOUGCOsRk.woff') format('woff') !important;
+}
+/* @end */
+
+/* @group Layout Fixes */
 * {
-   font-family: "open sans" !important;
+  font-family: "open sans", "lucida grande", sans-serif !important;
   -webkit-font-smoothing: antialiased !important;
 }
 
@@ -14,8 +48,6 @@
 .qp { margin-bottom: -42px !important; }
 
 .gbes#gb, .gbesi#gb, #gb { height: 45px !important; }
-
-/*.Bs { top:24px !important; }*/
 
 #gbx3, #gbx4 {
   background-color: transparent !important;
@@ -43,9 +75,15 @@
   z-index: 9 !important;
 }
 
-.aic {
+.aic{
   position: absolute !important;
   top: -44px !important;
+  z-index: 4 !important;
+}
+
+.MX, .AM {
+  position: absolute !important;
+  top: 2px !important;
   z-index: 4 !important;
 }
 
@@ -53,3 +91,9 @@
   position: relative !important;
   top: 0px !important;
 }
+
+/*hiding user mood statuses */
+.vG { display: none !important; }
+
+/*hiding search button*/
+#gbqfbw {display: none !important;}

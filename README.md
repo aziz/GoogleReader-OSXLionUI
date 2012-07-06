@@ -12,19 +12,19 @@ I spend a considerable amount of time everyday on Google Reader. In fact, for me
 > ### Chrome
 > 1. [Install stylish addon from chrome web store][4]
 > 2. [Install this user style from the userstyles.org website][5]
->
+> 
 > ------
->
+> 
 > ![Firefox][7]
 > ### Firefox
 > 1. [Install stylish extension from Firefox addons][6]
 > 2. [Install this user style from the userstyles.org website][5]
->
+> 
 > -----
->
+> 
 > ![Safari][8]
 > ### Safari
->
+> 
 > ![Safariextz][9][Install this safari extension][10]
 
 ## Contributing
@@ -73,6 +73,7 @@ Feel free to fork this repo and add your changes. make sure to make a pull reque
 
 #### 1.0
 * Initial Release
+
 
 [1]: https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/screenshot-small.png
 [2]: https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/screenshot.png

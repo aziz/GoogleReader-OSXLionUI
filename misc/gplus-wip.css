@@ -2,13 +2,21 @@
 1. video titles
 2. link title and descriptions
 3. comments
+
+TODO: compressed mode is broken
 */
 
 
 /*== TYPOGRAPHY */
-* {
- font-family: "open sans" !important;
-}
+* { font-family: "open sans" !important; }
+
+/*== GoogleBar */
+#gbx3, #gbzw { display: none !important; }
+#gbx1, #gb #gbx1, #gbq, #gbu, #gb #gbq, #gb #gbu { top: 0 !important; }
+#gb { height: 66px !important;}
+.Dob { height: 72px !important; }
+.Hoa.n0b.RWa { top: 120px !important; }
+#gbi4t { display: none !important; } /*hiding email*/
 
 /*== RTL */
 [dir="rtl"] {
@@ -19,25 +27,4 @@
 .XF [dir="rtl"], .YF [dir="rtl"], .ot-anchor [dir="rtl"], .Ju [dir="rtl"] {
   display: block !important;
   float: right !important;
-}
-
-/*== GoogleBar */
-#gbx3, #gbzw {
- display: none !important;
-}
-
-#gbx1, #gb #gbx1, #gbq, #gbu, #gb #gbq, #gb #gbu {
-  top: 0 !important;
-}
-
-#gb {
- height: 66px !important;
-}
-
-.Dob {
-  height: 72px !important;
-}
-
-.Hoa.n0b.RWa {
-  top: 120px !important;
 }

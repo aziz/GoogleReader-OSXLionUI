@@ -14,7 +14,7 @@
 @font-face{font-family:'Open Sans' !important;font-style:normal !important;font-weight:700 !important;src:local('Open Sans Bold'),local('OpenSans-Bold'),url('https://themes.googleusercontent.com/static/fonts/opensans/v5/k3k702ZOKiLJc3WVjuplzKRDOzjiPcYnFooOUGCOsRk.woff') format('woff') !important;}
 
 /*  Layout Fixes */
-*{font-family:"open sans","lucida grande","sans-serif" !important;}
+*{font-family:"open sans","lucida grande",sans-serif !important;}
 #logo-container,#gbg6{display:none !important;}
 .card .card-bottom{border:0 !important;}
 .card-common .card-actions{background-color:transparent !important; }
