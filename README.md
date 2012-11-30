@@ -34,6 +34,9 @@ Feel free to fork this repo and add your changes. make sure to make a pull reque
 [See the full list of contributors][11]
 
 ## History ##
+#### 1.6.1
+* Fixed distortion of Google Logo on the upper left corner (thanks to [Linjie Ding][13])
+
 #### 1.6.0
 * A whole bunch of improvements for things you barely see. 
 
@@ -87,6 +90,7 @@ Feel free to fork this repo and add your changes. make sure to make a pull reque
 [10]: https://github.com/aziz/Google-Reader-Lion-UI/raw/master/Google%20Reader%20Lion%20UI.safariextz
 [11]: https://github.com/aziz/Google-Reader-Lion-UI/contributors
 [12]: https://github.com/vidalvanbergen
+[13]: https://github.com/metaphysiks
 
 ------
 Copyright &copy; 2011-2012 Allen Bargi

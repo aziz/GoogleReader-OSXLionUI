@@ -1,8 +1,8 @@
 /*! Copyright (c) 2011-2012 Allen Bargi.
   twitter: @aziz
   github: http://github.com/aziz/Google-Reader-Lion-UI
-  Version: 1.6.0
-  Release Date: 2012-06-25
+  Version: 1.6.1
+  Release Date: 2012-11-29
 */
 
 /* @group Fonts */
@@ -64,7 +64,7 @@ body { padding:0 !important; margin:0 !important;}
 #nav #logo-section {display: none !important;}
 
 #gb {
-  font-family: "open sans", "lucida grande", "sans-serif" !important;
+  font-family: "open sans", "lucida grande", sans-serif !important;
   background-color:#d2d2d2 !important;
   border-bottom:1px solid #989898 !important;
   background-image:-moz-linear-gradient(top,#e8e8e8,#c2c2c2) !important;
@@ -92,6 +92,7 @@ body { padding:0 !important; margin:0 !important;}
 #gbql {
   background-position: 0 0 !important;
   background-image: url('https://github.com/aziz/Google-Reader-Lion-UI/raw/master/images/logo.png') !important;
+  background-size: auto !important;
   height: 27px !important;
   width: 71px !important;
 }
