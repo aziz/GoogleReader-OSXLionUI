@@ -39,7 +39,6 @@ body{padding:0 !important;margin:0 !important;}
 #gbv,#gbu{margin-right:24px !important;padding-bottom:0 !important;padding-top:4px !important;}
 .gbmab,.gbmac{top:-12px !important;}
 #gbd4,#gbd3,#gbd2,#gbd1{top:38px !important;}
-#gbwc{top:48px !important;}
 #gbq1 .gbmai{top:14px !important;}
 #gbq1{margin-left:16px !important;top:2px !important;}
 #gbqfbw{left:6px !important;right:auto !important;top:7px !important;margin:0 !important;height:14px !important;}
@@ -340,8 +339,6 @@ img[src^="http://feedads.g.doubleclick.net/"]{display:none !important;}
 #gb .gbes#gbx1, #gb .gbes#gbx2, .gbesi#gb #gbx1, .gbesi#gb #gbx2, #gb .gbes#gbq, #gb .gbes#gbu, .gbesi#gb #gbq, .gbesi#gb #gbu, #gbx1, #gb #gbx1, #gbq, #gbu, #gb #gbq, #gb #gbu { top: 0 !important; }
 #gbv, #gbu { margin-right: 8px !important; }
 #gbsf .jRa {visibility:hidden !important; }
-#gbwc { top: -58px !important; }
-#gbwc.gbes { top: -30px !important; }
 
 /* fixing loading bug */
 .pFb {display:none !important;}
